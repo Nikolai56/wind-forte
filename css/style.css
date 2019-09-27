@@ -992,5 +992,44 @@ nav .menu__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 550px;
+  height: 365px;
+}
+
+.projects__right-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.projects__comments {
+  text-align: center;
+  padding-top: 132px;
+  padding: 0 50px;
+}
+
+.projects__heading-works {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #093999;
+}
+
+.projects__checklist {
+  font-size: 16px;
+  line-height: 23px;
+  padding: 19px;
+}
+
+.projects__totals {
+  background-color: #093999;
+  color: #FFF;
+  height: 60px;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
