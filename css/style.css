@@ -590,23 +590,33 @@ img {
   margin: 0 auto;
 }
 
-.header {
+.header__wrap {
   background: url(../img/spb-line.png) no-repeat bottom;
   padding-top: 65px;
-}
-
-.header__wrapper {
+  padding-bottom: 37px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-weight: bold;
+}
+
+.header__elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__elem img {
+  padding-right: 14px;
 }
 
 .header__link {
@@ -615,40 +625,48 @@ img {
   line-height: 20px;
   text-decoration: none;
   color: #000;
-  padding-left: 14px;
 }
 
 .header__link:hover {
   color: #093999;
 }
 
-.header__phone {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
+.header__phone-wrap {
+  display: inline-block;
 }
 
-.nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.header__phone-wrap span {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.header__phone-link {
+  font-size: 20px;
+}
+
+.header__nav {
   height: 50px;
-  color: #fff;
+  color: white;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: normal;
   background-color: #093999;
 }
 
-.products {
+.header__nav:hover {
+  background-color: #FDB713;
+}
+
+.header__nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */

@@ -1,23 +1,47 @@
 .header
-   background: url(../img/spb-line.png) no-repeat bottom
-   padding-top: 65px
-   &__wrapper   
+   &__wrap
+      background: url(../img/spb-line.png) no-repeat bottom
+      padding-top: 65px
+      padding-bottom: 37px
       display: flex
-      flex-wrap: wrap
-      align-items: baseline
+      align-items: center
       justify-content: space-between
+      font-weight: bold
+   &__elem
+      display: flex
+      align-items: center
+      img
+         padding-right: 14px
    &__link
       font-weight: bold
       font-size: 17px
       line-height: 20px
       text-decoration: none
-      color: $main-color
-      padding-left: 14px
+      color: $black
       &:hover
          color: #093999
    &__phone
-      font-weight: bold
-      font-size: 20px
-      line-height: 24px
-
+      &-wrap
+         display: inline-block         
+         span
+            display: block
+            font-size: 14px
+            font-weight: normal
+      &-link
+         font-size: 20px     
+   &__nav      
+      height: 50px
+      color: white
+      font-size: 17px;
+      line-height: 20px;
+      font-weight: normal
+      background-color: $blue
+      &:hover
+         background-color: $yellow
+      &-menu
+         display: flex
+         align-items: center
+         justify-content: space-between
+      &-item
+         
 
