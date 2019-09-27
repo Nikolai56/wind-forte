@@ -13,15 +13,31 @@
       font-size: 48px
       line-height: 63px
       text-transform: uppercase
-   &__accessories
+   &__misc
       font-size: 20px
-      line-height: 24px
       padding-top: 23px
+      img
+         padding-right: 11px
+   &__link
+      font-weight: bold
+      font-size: 17px
+      line-height: 20px
+      text-decoration: none
+      color: $black
+      &:hover
+         color: #093999
    &__arrows
       position: absolute
       bottom: 0      
       padding-top: 223px
       display: flex
+   &__arr-left, &__arr-right
+      display: flex
+      justify-content: center
+      width: 100%
+      height: 100%
+      &:hover
+         background-color: $blue
    &__square
       height: 50px
       width: 50px
@@ -44,7 +60,17 @@
             line-height: 26px
             text-transform: uppercase    
       &-spec
-
+         padding-top: 5px
+         font-size: 14px
+         line-height: 17px
       &-policy
          margin-top: 18px
+         text-align: left
+         font-size: 12px
+         line-height: 17px
       &-policy-link
+         color: $yellow
+         text-decoration: underline
+         &:hover
+            text-decoration: none
+            cursor: pointer
