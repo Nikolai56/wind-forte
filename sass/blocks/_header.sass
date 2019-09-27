@@ -1,12 +1,11 @@
-.header
-   &__wrap
-      background: url(../img/spb-line.png) no-repeat bottom
-      padding-top: 65px
-      padding-bottom: 37px
-      display: flex
-      align-items: center
-      justify-content: space-between
-      font-weight: bold
+.header   
+   background: url(../img/spb-line.png) no-repeat bottom
+   padding-top: 65px
+   padding-bottom: 37px
+   display: flex
+   align-items: center
+   justify-content: space-between
+   font-weight: bold
    &__elem
       display: flex
       align-items: center
@@ -29,19 +28,31 @@
             font-weight: normal
       &-link
          font-size: 20px     
-   &__nav      
-      height: 50px
-      color: white
-      font-size: 17px;
-      line-height: 20px;
-      font-weight: normal
-      background-color: $blue
+.menu  
+   height: 50px
+   color: white
+   font-size: 17px
+   line-height: 20px
+   font-weight: normal
+   background-color: $blue
+   display: flex
+   align-items: center
+   justify-content: space-between
+   &__item
+      display: flex
+      width: 100%
+      align-items: center
+      justify-content: center
+      height: 100%
       &:hover
          background-color: $yellow
-      &-menu
-         display: flex
-         align-items: center
-         justify-content: space-between
-      &-item
+   &__link
+      color: $white
+      text-decoration: none
+      &:hover
+         color: $black
+         font-weight: bold
+
+   &-item
          
 
