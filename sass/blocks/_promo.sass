@@ -1,6 +1,8 @@
 .promo
    min-height: 550px
-   background: url("../img/banner.jpg") center (center/cover) no-repeat
+   background: url("../img/banner.jpg") bottom (center/cover) no-repeat
+   background-color: #f2f2f2
+   background-size: 85%
    position: relative
    &__wrap
       display: flex
@@ -29,14 +31,21 @@
    &__arrows
       position: absolute
       bottom: 0      
-      padding-top: 223px
       display: flex
    &__arr-left, &__arr-right
       display: flex
-      justify-content: center
+      justify-content: center 
       width: 100%
-      height: 100%
+      height: 100%      
+   &__arr-left
+      background: url(../img/svg/keyboard_left_backspace_24px.svg) center center no-repeat
       &:hover
+         background: url(../img/svg/keyboard_backspace_24px_w.svg) center center no-repeat
+         background-color: $blue
+   &__arr-right
+      background: url(../img/svg/keyboard_backspace_24px.svg) center center no-repeat
+      &:hover
+         background: url(../img/svg/keyboard_backspace_24px_w.svg) center center no-repeat
          background-color: $blue
    &__square
       height: 50px
