@@ -82,15 +82,21 @@
             </div>
 
             <div class="promo__card">
-                <span class="promo__free">Бесплатный вызов замерщика</span>
-                <span class="promo__spec">Наши специалисты свяжутся с вами в ближайше</span>
-                <form action="">
-                    <input type="text" class="promo__name">
-                    <input type="text" class="promo__tel">
-                    <input type="text" class="promo__addr">
-                    <input type="text" class="promo__submit">
+                <h4 class="promo__card-free">
+                    Бесплатный
+                    <br>вызов замерщика</h4>
+                <h6 class="promo__card-spec">
+                    Наши специалисты свяжутся с вами
+                    <br>в ближайше</h6>
+
+                <form id="calculation-form" class="promo__card-form" action="#">
+                    <input type="name" required placeholder="Как Вас Зовут" type="text">
+                    <input type="phone" required placeholder="+7(ХХХ) ХХХ - ХХ - ХХ">
+                    <input type="address" required placeholder="Адрес">
+
+                    <button class="button button_submit">Вызвать</button>
                 </form>
-                <span class="promo__policy">Нажимая кнопку, вы соглашаетесь с условиями <span>политики конфиденциальности</span></s>
+                <span class="promo__card-policy">Нажимая кнопку, вы соглашаетесь с условиями <a class="promo__card-policy-link">политики конфиденциальности</a></s>
             </div>
 
         </div>
