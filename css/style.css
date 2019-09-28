@@ -635,10 +635,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-weight: bold;
+  position: relative;
 }
 
 .header__elem {
@@ -648,10 +649,16 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 5%;
 }
 
 .header__elem img {
   padding-right: 14px;
+}
+
+.header__elem:first-child {
+  position: absolute;
+  left: 0;
 }
 
 .header__link {
@@ -824,7 +831,7 @@ nav .menu__link {
   max-width: 380px;
   height: 477px;
   padding: 30px 50px;
-  border-radius: 17px;
+  border-radius: 15px;
   color: #FFF;
   background-color: #093999;
   text-align: center;
@@ -979,8 +986,8 @@ nav .menu__link {
     font-size: 1em;
   }
   .promo__card {
-    margin-top: 15px;
-    min-width: 200px;
+    margin-top: 25px;
+    min-width: 220px;
     height: auto;
     padding: 30px 50px;
     text-align: center;
