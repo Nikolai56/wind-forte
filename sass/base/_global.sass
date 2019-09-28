@@ -10,14 +10,14 @@ body
    font-size: 16px
    line-height: 1.2
    font-weight: normal
-   color: #102746
+   color: $black
    
 img
    max-width: 100%
    height: auto
 
 .container
-   max-width: 1180px
+   max-width: 1170px
    margin: 0 auto
 
 .heading
@@ -27,3 +27,16 @@ img
    padding: 62px 0 44px 0
    text-transform: uppercase
    font-weight: bold
+
+@media (max-width: 1199px)
+   .container
+      max-width: 960px
+
+@media (max-width: 991px)
+   .container
+      max-width: 750px
+
+@media (max-width: 767px)
+   .container
+      max-width: 100%
+      padding: 0 30px

@@ -1,23 +1,65 @@
 .products
-
    &__wrap
       display: flex
       flex-direction: row
-      flex-wrap: wrap
       justify-content: space-between
    &__elem
       display: flex
       flex-direction: column
       height: 280px
       width: 280px
+      padding: 15px
+      margin: 10px
       align-items: center
       justify-content: center
       border: 1px solid #C1C1C1
       border-radius: 10px
-      margin: 0 0 25px 0
       font-weight: bold
       font-size: 20px
       line-height: 24px
       img
-         display: block
          padding-bottom: 16px
+
+@media (max-width: 1199px)
+   .products
+      &__elem
+         font-size: 110%
+         width: 235px
+         height: 235px
+
+@media (max-width: 991px)
+   .products
+      &__elem
+         font-size: 90%
+         max-width: 195px
+         max-height: 195px
+      
+
+@media (max-width: 767px)
+   .products
+      &__wrap
+         flex-wrap: wrap
+         justify-content: center
+      &__elem
+         max-width: 280px
+         max-height: 280px
+         font-size: 20px
+         
+@media (max-width: 575px)
+   .products
+      &__wrap
+         flex-direction: column
+         justify-content: center
+         align-items: center
+      &__elem
+         display: block
+         height: auto
+         min-width: 100%
+         padding: 8px
+         margin: 4px
+         img
+            padding-right: 10px
+            max-width: 50px
+
+
+      
