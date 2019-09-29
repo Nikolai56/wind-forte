@@ -1,6 +1,7 @@
 .projects
    &__wrap
-      display: flex            
+      display: flex
+
    &__left
       font-size: 17px
       font-weight: bold
@@ -23,31 +24,61 @@
       right: 0
       height: 12px
       margin: 0
+
+   &__right
+      &-wrap
+         display: flex
+         flex-direction: row
+
    &__slider
       display: flex   
       height: 365px
-   &__right-wrap
-      display: flex
-      flex-direction: row
-   &__comments
+   &__checklist
       text-align: center
       padding-top: 132px
-      padding: 0 50px     
+      padding: 0 50px
+      height: 365px
+      background: url(../img/replacement-windows.jpg)
+      background: rgba(0, 0,0, 0.1)
    &__heading-works
       display: block
       font-size: 20px
       line-height: 24px
       font-weight: bold
       color: $blue
-   &__checklist
+   &__list-item
       font-size: 16px
       line-height: 23px
       padding: 19px
    &__totals
       background-color: $blue
       color: $white
-      height: 60px
       width: 100%
+      
+   &__comments
+      &-block
+         padding-top: 25px
+         display: flex
+         img
+            width: 121px
+            height: 121px
+            border-radius: 50%
+            border: 2px solid $yellow
+      &-spacer
+         width: 0px
+         padding-left: 26px
+         
+   &__comment
+      font-size: 14px
+      max-height: 121px
+      padding: 24px 50px 24px 35px
+      border: 1px solid #c1c1c1
+      border-radius: 10px
+      p
+         font-weight: bold
+         font-size: 18px
+         padding: 13px 0 0 0
+         color: $blue
 
 
       
