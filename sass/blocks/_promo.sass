@@ -1,13 +1,16 @@
 .promo
    min-height: 550px
-   background: url("../img/banner.jpg") bottom (center/cover) no-repeat
-   background-color: #f2f2f2   
-   position: relative
+   background: url("../img/banner.jpg") top (center) no-repeat
    &__wrap
       display: flex
-      justify-content: space-between   
+      justify-content: space-between
    &__left
+      width: 100%
+      position: relative
+      min-height: 550px
+      display: block
    &__protect
+      display: block
       padding-top: 103px
       color: $blue
       font-weight: bold
@@ -15,6 +18,7 @@
       line-height: 63px
       text-transform: uppercase
    &__misc
+      display: block
       font-size: 20px
       padding-top: 23px
       img
@@ -83,3 +87,10 @@
          &:hover
             text-decoration: none
             cursor: pointer
+
+@media (max-width: 767px)
+   .promo
+      &__wrap
+         flex-direction: column
+         align-items: center
+      background-position: -200px 0px

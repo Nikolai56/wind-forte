@@ -1,23 +1,24 @@
 .promo
-    &__card-form
-        margin-top: 16px
-        display: flex
-        flex-direction: column
-        width: 280px
-        input 
-            height: 50px
-            border-radius: 5px
-            background-color: $white
-            margin-bottom: 15px
-            border: none
-            padding: 0 20px
-            color: $blue
-            font-size: 17px
-            font-weight: normal
-            &:nth-child(3) 
+    &__card
+        &-form
+            margin-top: 16px
+            display: flex
+            flex-direction: column
+            width: 280px
+            input 
+                height: 50px
+                border-radius: 5px
+                background-color: $white
                 margin-bottom: 15px
-        &_mt25 
-            margin-top: 25px
+                border: none
+                padding: 0 20px
+                color: $blue
+                font-size: 17px
+                font-weight: normal
+                &:nth-child(3) 
+                    margin-bottom: 15px
+            &_mt25 
+                margin-top: 25px
     
 .button 
     width: 150px
@@ -42,73 +43,3 @@
         width: 131px
         height: 40px
         font-size: 14px
-
-@media (max-width: 767px)
-    .promo
-        &__card-form
-            width: 100%
-            input 
-                height: 40px
-                min-width: auto
-                font-size: 0.8em
-        &__card   
-            min-width: 238px
-            height: auto
-            padding: 20px 30px
-            text-align: center
-            &-free
-                font-size: 1.2em
-            &-spec
-                font-size: 0.7em
-            &-policy
-                font-size: 0.7em
-                text-align: center
-        &__protect
-            padding-right: 10px
-            font-size: 2.3em
-            line-height: 1.3em
-    .button 
-        width: auto
-        &_submit
-            height: 40px         
-            font-size: 1em
-    
-@media (max-width: 575px)
-    .promo
-        &__wrap
-            diplay: flex
-            justify-content: center            
-        &__left
-            display: none
-        &__card-form
-            width: 100%
-            input
-                height: 50px
-                font-size: 1em
-        &__card
-            margin-top: 26px 
-            min-width: 220px
-            height: auto
-            padding: 25px 35px
-            text-align: center
-            &-free
-                font-size: 1.25em
-            &-spec
-                font-size: 0.75em
-            &-policy
-                font-size: 0.65em
-    .button 
-        width: auto
-        &_submit
-            height: 50px         
-            font-size: 1.2em
-
-@media (max-width: 340px)
-    .promo
-        &__card   
-            padding: 25px 25px
-        &__card-form
-            input
-                font-size: .95em
-
-
