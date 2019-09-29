@@ -5,11 +5,10 @@
    display: flex
    align-items: center
    justify-content: flex-end   
-   font-weight: bold
    position: relative
    &__elem
       display: flex
-      align-items: center 
+      align-items: center
       padding-right: 5%      
       img
          padding-right: 14px
@@ -25,45 +24,43 @@
       text-decoration: none
       color: $black
       &:hover
-         color: #093999
+         color: $blue
    &__phone
       &-wrap
          a
             font-size: 24px
-         display: inline-block         
          span
-            display: block
             font-size: 16px
-            font-weight: normal
-      &-link
-         font-size: 20px    
+    
 nav
    background-color: $blue
-   .menu  
-      height: 50px
+   width: 100%
+
+.menu
+   display: flex
+   height: 50px
+   &__item
+      color: $white
+      display: flex
+      width: 100%
+      align-items: center
+      justify-content: center
+      height: 100%
+      &:hover
+         background-color: $yellow
+         color: $black
+         font-weight: bold
+   &__link
       font-size: 17px
       line-height: 20px
       font-weight: normal
-      display: flex 
-      &__item
-         color: $white
-         display: flex
-         width: 100%
-         align-items: center
-         justify-content: center
-         height: 100%
-         &:hover
-            background-color: $yellow
-            color: $black
-            font-weight: bold
-      &__link
-         text-decoration: none
-         color: inherit
-         height: 100%
-         width: 100%
-         display: flex
-         justify-content: center
-         align-items: center
+      text-decoration: none
+      color: inherit
+      height: 100%
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
 
 @media (max-width: 991px)
    .header
@@ -95,29 +92,12 @@ nav
          img
             padding-right: 0
       &__elem
-         padding-right: 5%
+         padding-right: 10px
+         &:last-child
+            padding-right: 40px
+      &__phone-wrap
+         display: none
    .menu
       &__link  
          font-size: .8em
-         padding-right: 10px
-
-@media (max-width: 575px)
-   .header
-      height: 80px
-      &__elem
-         padding-right: 2%
-         img
-            padding: 0 2px 0 0
-
-@media (max-width: 419px)
-   .phone_thumb
-      display: none
-   .calc_thumb, .cab_thumb
-      display: none
-   .header
-      height: 70px
-      &__logo
-         img
-            width: 55%
-      &__phone-wrap
-         font-size: .9em  
+        
