@@ -57,11 +57,11 @@
             padding: 20px 30px
             text-align: center
             &-free
-                font-size: 1em
+                font-size: 1.2em
             &-spec
                 font-size: 0.7em
             &-policy
-                font-size: 0.65em
+                font-size: 0.7em
                 text-align: center
         &__protect
             padding-right: 10px
@@ -86,19 +86,29 @@
                 height: 50px
                 font-size: 1em
         &__card
-            margin-top: 25px 
+            margin-top: 26px 
             min-width: 220px
             height: auto
-            padding: 30px 50px
+            padding: 25px 35px
             text-align: center
             &-free
-                font-size: 1.4em
+                font-size: 1.25em
             &-spec
-                font-size: 0.85em
-            &-policy
                 font-size: 0.75em
+            &-policy
+                font-size: 0.65em
     .button 
         width: auto
         &_submit
             height: 50px         
             font-size: 1.2em
+
+@media (max-width: 340px)
+    .promo
+        &__card   
+            padding: 25px 25px
+        &__card-form
+            input
+                font-size: .95em
+
+

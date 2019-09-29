@@ -16,9 +16,11 @@
       &:first-child
          position: absolute
          left: 0
+      &:last-child
+         padding-right: 0
    &__link
       font-weight: bold
-      font-size: 17px
+      font-size: 18px
       line-height: 20px
       text-decoration: none
       color: $black
@@ -26,10 +28,12 @@
          color: #093999
    &__phone
       &-wrap
+         a
+            font-size: 24px
          display: inline-block         
          span
             display: block
-            font-size: 14px
+            font-size: 16px
             font-weight: normal
       &-link
          font-size: 20px    
@@ -55,8 +59,65 @@ nav
       &__link
          text-decoration: none
          color: inherit
+         height: 100%
+         width: 100%
+         display: flex
+         justify-content: center
+         align-items: center
 
+@media (max-width: 991px)
+   .header
+      height: 80px
+      &__logo
+         img
+            width: 75%
+      &__elem
+         padding-right: 5%
+         img
+            padding-right: 5px
+      &__link
+         font-size: 1em
+      &__phone-wrap
+         a
+            font-size: 1.2em
+         span
+            font-size: 0.8em
+   .menu
+      &__link  
+         font-size: .9em
 
+@media (max-width: 767px)
+   .calc_btn, .cab_btn
+      display: none
+   .header
+      height: 80px
+      &__logo
+         img
+            padding-right: 0
+      &__elem
+         padding-right: 5%
+   .menu
+      &__link  
+         font-size: .8em
+         padding-right: 10px
 
-         
+@media (max-width: 575px)
+   .header
+      height: 80px
+      &__elem
+         padding-right: 2%
+         img
+            padding: 0 2px 0 0
 
+@media (max-width: 419px)
+   .phone_thumb
+      display: none
+   .calc_thumb, .cab_thumb
+      display: none
+   .header
+      height: 70px
+      &__logo
+         img
+            width: 55%
+      &__phone-wrap
+         font-size: .9em  
