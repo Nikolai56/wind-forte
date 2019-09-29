@@ -24,30 +24,30 @@
    .products
       &__elem
          font-size: 110%
-         width: 235px
-         height: 235px
+         max-width: 235px
+         max-height: 235px
 
 @media (max-width: 991px)
    .products
       &__elem
-         font-size: 90%
-         max-width: 195px
-         max-height: 195px
-      
+         font-size: 0.9em
 
 @media (max-width: 767px)
    .products
       &__wrap
          flex-wrap: wrap
-         justify-content: center
+         min-width: 100%
       &__elem
          max-width: 280px
          max-height: 280px
          font-size: 20px
          
-@media (max-width: 575px)
+@media (max-width: 660px)
+   .heading
+      padding: 1em 0 .3em 0
    .products
       &__wrap
+         flex-wrap: nowrap
          flex-direction: column
          justify-content: center
          align-items: center
@@ -55,11 +55,12 @@
          display: block
          height: auto
          min-width: 100%
-         padding: 8px
-         margin: 4px
+         padding: 5px
+         margin: 3px
+         font-size: 1.45em
          img
-            padding-right: 10px
-            max-width: 50px
+            padding: 0 10px 0 0
+            height: 1.5em
 
 
       
