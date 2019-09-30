@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -60,6 +63,7 @@
 
 <!-- PROMO -->
 <section class="promo">
+
     <div class="container">
         <div class="promo__wrap">
             
@@ -192,39 +196,156 @@
 </section>
 
 <!-- COSTS -->
-<section class="costs">
-
+<section class="calc">
     <div class="container">
+        <p class="heading">Узнайте стоимость работ</p>
+        <div class="calc__wrapper">
 
-        <div class="costs__left">
-            <p>Выберите тип продукции</p>
-            <input type="" placeholder="Окна">
-            <ul>
-                <li><img src=""></li>
-                <li><img src=""><img src=""></li>
-                <li><img src=""><img src=""><img src=""></li>
-                <li><img src=""><img src=""><img src=""></li>
-            </ul>
-            <p>Характеристики</p>
-            <p>Тип профиля<input type="text" placeholder="Forte 58"></p>
-            <p>Ширина подоконника<input type="text" placeholder="500 мм"></p>
-            <p>Ширина отлива<input type="text" placeholder="Forte 58"></p>
-            <input type="checkbox">Монтаж<input type="checkbox">Отделка откоса
-        </div>
+            <div class="calc__left">
 
-        <div class="costs__right">
-            <p>Задайте параметры</p>
-            <p>Нажмите на створку для выбора типа открывания</p>
-            <p><input type="text" placeholder="1500">мм</p>
-            <div>
-                <div><input class="VERTICAL" type="text" placeholder="1500">мм</div>
-                <div><img src="">Поворотная вправо<img src="">Поворотно-откидная левая</div>
+                <p class="heading heading_blue-md">Выберите тип продукции</p>
+    
+                <form class="form form_dropdown" action="">
+                    <select name="Тип продукции" id="">
+                        <option value="Окна">Окна</option>
+                        <option value="Двери">Двери</option>
+                        <option value="Жалюзи">Жалюзи</option>
+                        <option value="Роллеты">Роллеты</option>
+                        <option value="Натяжные потолки">Натяжные потолки</option>
+                    </select>
+                </form>
+                
+                <img src="img/lay1-thumb.png">
+                <img src="img/lay2-thumb.png">
+                <img src="img/lay3-thumb.png">
+                <img src="img/lay4-thumb.png">
+                
+                <p class="heading heading_blue-md">Характеристики</p>
+                
+                <ul class="calc__details">
+                    <li>Тип профиля</li>
+                    <li>
+                        <form class="form form_dropdown" action="">
+                            <select size="1">
+                                <option value="Forte_58">Forte 58</option><option value="Forte_70">Forte 70</option><option value="Ivaper_62">Ivaper 62</option><option value="Ivaper_70">Ivaper 70</option><option value="Ivaper_74">Ivaper 74</option>
+                            </select>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="calc__details">
+                    <li>Ширина подоконника</li>
+                    <li>
+                        <form class="form form_dropdown" action="">
+                            <select size="1">
+                                <option value="none">Нет</option><option value="w150">150мм</option><option value="w200">200мм</option><option value="w250">250мм</option><option value="w300">300мм</option><option value="w350">350мм</option><option value="w400">400мм</option><option value="w450">450мм</option><option value="w500">500мм</option><option value="w550">550мм</option><option value="w600">600мм</option>
+                            </select>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="calc__details">
+                    <li>Ширина отлива</li>
+                    <li>                   
+                        <form class="form form_dropdown" action="">
+                            <select size="1">
+                                <option value="none">Нет</option><option value="w0_100">менее 100мм</option><option value="w100_150">100-150мм</option><option value="w150_200">150-200мм</option><option value="w200_250">200-250мм</option><option value="w250_400">250-400мм</option>
+                            </select>
+                        </form>
+                    </li>
+                </ul>
+
+                <input type="checkbox">Монтаж<input type="checkbox">Отделка откоса
             </div>
-            <button>Добавить в заказ</button>
+    
+            <div class="calc__right">
+                <p>Задайте параметры</p>
+                <p>Нажмите на створку для выбора типа открывания</p>
+                <p><input type="text" placeholder="1500">мм</p>
+                <div>
+                    <div><input class="VERTICAL" type="text" placeholder="1500">мм</div>
+                    <div><img src="">Поворотная вправо<img src="">Поворотно-откидная левая</div>
+                </div>
+                <button>Добавить в заказ</button>
+            </div>
         </div>
 
     </div>
 </section>
+
+   
+        <!-- <div class="wincalc-module-body">
+            <select size="1">
+                <option value="windows">Окна</option>
+                <option value="doors">Балконные двери</option>
+            </select>
+        </div>
+    
+    
+        <div class="box options-block">
+            <h1><span>Характеристики</span></h1>
+            <div class="wincalc-child-modules">
+                <div class="wincalc-combo-selector-module">
+                    <h1>Тип профиля</h1>
+                    <div class="wincalc-module-body">
+                        <select size="1">
+                            <option value="Forte_58">Forte 58</option>
+                            <option value="Forte_70">Forte 70</option>
+                            <option value="Ivaper_62">Ivaper 62</option>
+                            <option value="Ivaper_70">Ivaper 70</option>
+                            <option value="Ivaper_74">Ivaper 74</option>
+                        </select>
+                    </div>
+                    <div class="wincalc-clear"></div>
+                </div>
+                <div class="wincalc-combo-selector-module">
+                    <h1>Ширина подоконника</h1>
+                    <div class="wincalc-module-body">
+                        <select size="1">
+                            <option value="none">Нет</option>
+                            <option value="w150">150мм</option>
+                            <option value="w200">200мм</option>
+                            <option value="w250">250мм</option>
+                            <option value="w300">300мм</option>
+                            <option value="w350">350мм</option>
+                            <option value="w400">400мм</option>
+                            <option value="w450">450мм</option>
+                            <option value="w500">500мм</option>
+                            <option value="w550">550мм</option>
+                            <option value="w600">600мм</option>
+                        </select>
+                    </div>
+                    <div class="wincalc-clear"></div>
+                </div>
+                <div class="wincalc-combo-selector-module">
+                    <h1>Ширина отлива</h1>
+                    <div class="wincalc-module-body">
+                        <select size="1">
+                            <option value="none">Нет</option>
+                            <option value="w0_100">менее 100мм</option>
+                            <option value="w100_150">100-150мм</option>
+                            <option value="w150_200">150-200мм</option>
+                            <option value="w200_250">200-250мм</option>
+                            <option value="w250_400">250-400мм</option>
+                        </select>
+                    </div>
+                    <div class="wincalc-clear"></div>
+                </div>
+                <div class="wincalc-combo-selector-module">
+                    <h1>Монтаж</h1>
+                    <div class="wincalc-module-body">
+                        <select size="1">
+                            <option value="not">Да</option>
+                            <option value="wood">Нет</option>
+                        </select>
+                    </div>
+                    <div class="wincalc-clear"></div>
+                </div>
+                <div class="wincalc-combo-selector-module">
+                    <h1>Отделка откоса</h1>
+                    <div class="wincalc-module-body">
+                        <select size="1">
+                            <option value="not">Да</option>
+                            <option value="gor">Нет</option> -->
+
 
 <!-- FACTS -->
 <section class="facts">
