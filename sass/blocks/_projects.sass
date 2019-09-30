@@ -3,19 +3,34 @@
       display: flex
 
    &__left
-      font-size: 17px
-      font-weight: bold
       display: flex
-      flex-direction: column
-   &__elem      
-      width: 278px
-      height: 50px    
-      margin-right: 24px
-      display: flex
-      align-items: center
+      flex-direction: column 
+   &__elem
       &.active  
          position: relative       
          border-bottom: 2px solid $yellow
+      font-size: 15px
+      font-weight: bold
+      color: $black
+      width: 278px
+      height: 50px    
+      margin: 0 24px 15px 0
+      display: flex
+      align-items: center
+      text-decoration: underline
+      &::before
+         transition: 0.15s all
+         content: ''
+         width: 0px
+         bottom: -2px
+         color: $yellow
+         opacity: 0
+         position: absolute
+         border: 1px solid $yellow
+      &:hover
+         &::before
+            width: 100%
+            opacity: 1
    &__thumb
       height: 33px
       margin: 4px 15px 8px 0
@@ -29,31 +44,60 @@
       &-wrap
          display: flex
          flex-direction: row
-
    &__slider
+      width: 100%
+      max-width: 550px
       display: flex   
       height: 365px
-   &__checklist
+      position: relative   
+      background: url(../img/Aluminium-awning-windows.jpg) top left no-repeat
+   &__works-done
+      display: inline
       text-align: center
       padding-top: 132px
-      padding: 0 50px
+      padding-top: 32px
+      min-width: 330px
       height: 365px
       background: url(../img/replacement-windows.jpg)
       background: rgba(0, 0,0, 0.1)
-   &__heading-works
-      display: block
+   &__heading-works 
       font-size: 20px
       line-height: 24px
-      font-weight: bold
       color: $blue
+      padding: 0 0 19px 50px
+      font-weight: bold
+      text-align: left
+   &__works-list 
    &__list-item
+      width: 100%      
       font-size: 16px
       line-height: 23px
-      padding: 19px
+      padding: 0 31px 19px 87px
+      text-align: left
+      position: relative
+      &:nth-child(4)         
+         padding-bottom: 32px
+      &:last-child
+         background-color: $blue
+         padding: 14px 55px 15px 87px
+      &:before
+         content: ''
+         display: block
+         height: 1px
+         width: 26px
+         color: $yellow
+         background-color: $yellow
+         position: absolute
+         left: 50px
+         top: 10px
+         transform: rotate(180deg)
+      
    &__totals
+      align-items: center
       background-color: $blue
       color: $white
       width: 100%
+      height: 60px
       
    &__comments
       &-block
