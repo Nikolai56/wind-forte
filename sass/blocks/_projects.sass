@@ -1,5 +1,4 @@
 .projects
-   &__left-wrap
    &__elem
       position: relative
       &.active  
@@ -51,11 +50,13 @@
       flex-direction: column
       justify-content: flex-end
       padding-top: 32px
-      background: rgba(255,255,255,0.95)         
+      background: rgba(255,255,255,0.95) 
+      height: 365px
+      width: 330px     
    &__list-item           
       font-size: 16px
       line-height: 23px
-      padding: 0 31px 19px 87px
+      padding: 0 31px 15px 87px
       text-align: left
       position: relative
       &:before
@@ -69,8 +70,7 @@
          left: 50px
          top: 10px
          transform: rotate(180deg)
-      &:nth-child(4)         
-         padding-bottom: 32px
+      
       &:last-child
          color: white
          font-size: 25px
@@ -102,7 +102,7 @@
       position: relative 
       font-size: 14px
       max-height: 121px
-      padding: 24px 50px 24px 35px
+      padding: 20px 30px 20px 40px
       border: 1px solid #c1c1c1
       border-radius: 10px
       margin-bottom: 70px
@@ -118,14 +118,42 @@
       p
          font-weight: bold
          font-size: 16px
-         padding: 13px 0 0 0
+         padding: 6px 0 0 0
          color: $blue
 
-
 @media (max-width: 991px)
+   .projects               
+      &__elem
+         font-size: 0.8em
+      &__thumb
+         margin-right: 5px
+      &__right
+         max-width: 100%
+      &__list-item           
+         font-size: 0.8em
+         padding: 0 15px 19px 25px
+         &:before
+            display: none
+
+   .heading
+      &_works
+         padding-left: 25px
+         font-size: 1em
+
+@media (max-width: 767px)
    .projects
       &__wrap
          flex-direction: column
+      &__thumb
+         display: none
+      &__left-wrap
+         display: flex
+         flex-direction: row
+      &__elem
+         font-size: 12px
+         line-height: 17px
+         padding-right: 7px
+         flex-wrap: wrap
 
 
       
