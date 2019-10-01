@@ -56,7 +56,7 @@
 
    .header
       background: none
-      height: 75px
+      height: 70px
       &__logo
          img
             width: 75%
@@ -72,12 +72,59 @@
          span
             font-size: 0.8em
    .menu
-      &__link  
+      &__link
          font-size: .9em
-
 
 @media (max-width: 767px)
 
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		left: -100%
+		width: 50%
+		height: 100vh
+		padding: 20px 15px
+		background-color: rgba(0,0,0, .8)
+		transition: 0.6s all
+		&_active
+			left: 0
+		&__item
+			padding-right: 0
+			border: none
+			margin: 10px 0
+		&__link
+			font-size: 20px
+
+	.hamburger
+		display: block
+		position: absolute
+		left: 0px
+		top: 60%
+		transform: translateY(-50%)
+		width: 26px
+		height: 30px
+		span
+			display: block
+			height: 4px
+			width: 100%
+			background-color: $blue
+			margin-bottom: 4px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+
+@media ( max-width: 767px )
+   
    .promo
       background-position: -200px 0px
       &__wrap
@@ -92,7 +139,7 @@
       padding: 1.2em 0 .4em 0
 
    .products
-      &__wrap         
+      &__wrap
          flex-direction: column
          justify-content: center
          align-items: center
@@ -106,49 +153,11 @@
          img
             padding: 0 10px 0 0
             height: 1.5em
-         
-	.menu
-		position: fixed
-		flex-direction: column
-		justify-content: center
-		align-items: center
-		top: 0
-		left: -100%
-		width: 50%
-		height: 100vh
-		padding: 20px 15px
-		background-color: rgba(0,0,0, .8)
-		transition: 0.6s all
-		&_active 
-			left: 0
-		&__item 
-			padding-right: 0
-			border: none
-			margin: 10px 0
-		&__link 
-			font-size: 20px
 
-	.hamburger
-		display: block
-		position: absolute
-		left: 20px
-		top: 7%
-		transform: translateY(-50%)
-		width: 26px
-		height: 30px
-		span 
-			display: block
-			height: 2px
-			width: 100%
-			background-color: $blue
-			margin-bottom: 5px
-			transition: 0.5s all
-		&_active 
-			span 
-				margin-bottom: -2px 
-				&:nth-child(1)
-					transform: translateY(3px) rotate(-45deg)
-				&:nth-child(2)
-					display: none
-				&:nth-child(3)
-					transform: translateY(3px) rotate(45deg)
+   .header
+      justify-content: flex-end
+      &__elem
+         padding-left: 55px
+         padding-right: 0
+         &:last-child, &:nth-child(3), .header__phone-wrap
+            display: none
