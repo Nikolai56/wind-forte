@@ -19,3 +19,136 @@
 //       padding: 0 25px
 //    .heading
 //       font-size: 1.65em
+
+@media (max-width: 991px)
+
+   .projects
+      &__wrap
+         flex-direction: column
+      &__thumb
+         display: none
+      &__left-wrap
+         display: flex
+         flex-wrap: wrap
+         justify-content: center
+      &__elem
+         font-size: 1.2em
+         padding-right: 2em
+         color: $blue
+         &.active
+            border: none
+            color: $black
+            text-decoration: none
+      &__arr-right-sm
+         display: none
+      &__works
+         min-width: 100%
+         height: auto
+      &__list-item
+         font-size: 1.2em
+         margin-bottom: 1em
+      &__slider
+            max-width: 550px
+            width: auto
+
+   .heading_works
+      font-size: 1.5em
+
+   .header
+      background: none
+      height: 75px
+      &__logo
+         img
+            width: 75%
+      &__elem
+         padding-right: 5%
+         img
+            padding-right: 5px
+      &__link
+         font-size: 1em
+      &__phone-wrap
+         a
+            font-size: 1.2em
+         span
+            font-size: 0.8em
+   .menu
+      &__link  
+         font-size: .9em
+
+
+@media (max-width: 767px)
+
+   .promo
+      background-position: -200px 0px
+      &__wrap
+         flex-direction: column
+         align-items: center
+
+   .projects
+      &__comments
+         display: none
+
+   .heading
+      padding: 1.2em 0 .4em 0
+
+   .products
+      &__wrap         
+         flex-direction: column
+         justify-content: center
+         align-items: center
+      &__elem
+         display: block
+         height: auto
+         min-width: 100%
+         padding: 5px
+         margin: 3px
+         font-size: 1.45em
+         img
+            padding: 0 10px 0 0
+            height: 1.5em
+         
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		left: -100%
+		width: 50%
+		height: 100vh
+		padding: 20px 15px
+		background-color: rgba(0,0,0, .8)
+		transition: 0.6s all
+		&_active 
+			left: 0
+		&__item 
+			padding-right: 0
+			border: none
+			margin: 10px 0
+		&__link 
+			font-size: 20px
+
+	.hamburger
+		display: block
+		position: absolute
+		left: 20px
+		top: 7%
+		transform: translateY(-50%)
+		width: 26px
+		height: 30px
+		span 
+			display: block
+			height: 2px
+			width: 100%
+			background-color: $blue
+			margin-bottom: 5px
+			transition: 0.5s all
+		&_active 
+			span 
+				margin-bottom: -2px 
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
