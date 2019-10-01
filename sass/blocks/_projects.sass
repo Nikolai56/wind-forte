@@ -1,4 +1,6 @@
 .projects
+   &__left-wrap
+      padding-bottom: 10px
    &__elem
       position: relative
       &.active  
@@ -12,6 +14,8 @@
       display: flex
       align-items: center
       text-decoration: underline
+      text-decoration-style: dotted
+      text-underline-position: under
       &::before
          transition: 0.25s all
          content: ''
@@ -48,21 +52,20 @@
    &__works
       display: flex
       flex-direction: column
-      justify-content: flex-end
-      padding-top: 32px
+      justify-content: space-between
       background: rgba(255,255,255,0.95) 
       height: 365px
       width: 330px     
    &__list-item           
       font-size: 16px
       line-height: 23px
-      padding: 0 31px 15px 87px
+      padding: 0 31px 0px 87px
       text-align: left
       position: relative
       &:before
          content: ''
          display: block
-         height: 1px
+         height: 2px
          width: 26px
          color: $yellow
          background-color: $yellow
@@ -70,6 +73,9 @@
          left: 50px
          top: 10px
          transform: rotate(180deg)
+      &:first-child
+         &:before
+            opacity: 0
       
       &:last-child
          color: white
@@ -122,25 +128,6 @@
          color: $blue
 
 @media (max-width: 991px)
-   .projects               
-      &__elem
-         font-size: 0.8em
-      &__thumb
-         margin-right: 5px
-      &__right
-         max-width: 100%
-      &__list-item           
-         font-size: 0.8em
-         padding: 0 15px 19px 25px
-         &:before
-            display: none
-
-   .heading
-      &_works
-         padding-left: 25px
-         font-size: 1em
-
-@media (max-width: 767px)
    .projects
       &__wrap
          flex-direction: column
@@ -148,15 +135,33 @@
          display: none
       &__left-wrap
          display: flex
-         flex-direction: row
-      &__elem
-         font-size: 12px
-         line-height: 17px
-         padding-right: 7px
          flex-wrap: wrap
+         justify-content: center
+      &__elem
+         font-size: 1.2em
+         line-height: 3
+         padding-right: 2em
+         color: $blue
+         &.active
+            border: none
+            color: $black
+            text-decoration: none
+      &__arr-right-sm
+         display: none
+      &__works
+         min-width: 100%
+         height: auto
+      &__list-item
+         font-size: 1.2em
+         margin-bottom: 1em
+
+   .heading_works
+      font-size: 1.5em
 
 
-      
-
+@media (max-width: 767px)
+   .projects
+      &__comments
+         display: none
 
       
