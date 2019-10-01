@@ -85,26 +85,6 @@ nav
          font-size: .9em
 
 @media (max-width: 767px)
-   .calc_btn, .cab_btn
-      display: none
-   .header
-      height: 80px
-      &__logo
-         img
-            padding-right: 0
-      &__elem
-         padding-right: 10px
-         &:last-child
-            padding-right: 40px
-      &__phone-wrap
-         display: none
-   .menu
-      &__link  
-         font-size: .8em
-
-
-
-@media (max-width: 767px)
 
 	.menu
 		position: fixed
@@ -130,8 +110,8 @@ nav
 	.hamburger
 		display: block
 		position: absolute
-		right: 18px
-		top: 43px
+		left: 20px
+		top: 7%
 		transform: translateY(-50%)
 		width: 26px
 		height: 30px
@@ -152,3 +132,5 @@ nav
 				&:nth-child(3)
 					transform: translateY(3px) rotate(45deg)
         
+   .header__elem
+      display: none
