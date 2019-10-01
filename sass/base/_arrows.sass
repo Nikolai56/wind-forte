@@ -1,0 +1,28 @@
+.arrows
+    position: absolute
+    bottom: 0      
+    display: flex
+    &__left, &__right
+        display: flex
+        justify-content: center
+        width: 100%
+        height: 100%
+    &__left
+        background: url(../img/svg/keyboard_left_backspace_24px.svg) center center no-repeat
+        &:hover
+            background: url(../img/svg/keyboard_backspace_24px_w.svg) center center no-repeat
+            background-color: $blue
+            transform: scaleX(-1)
+    &__right
+        background: url(../img/svg/keyboard_backspace_24px.svg) center center no-repeat
+        &:hover
+            background: url(../img/svg/keyboard_backspace_24px_w.svg) center center no-repeat
+            background-color: $blue
+    &__square
+        height: 50px
+        width: 50px
+        background-color: $yellow
+        margin-right: 5px
+        display: flex
+        justify-content: center
+        align-items: center

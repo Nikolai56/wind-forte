@@ -1,23 +1,16 @@
 .projects
-   &__wrap
-      display: flex
-
-   &__left
-      display: flex
-      flex-direction: column 
    &__elem
       &.active  
          position: relative       
          border-bottom: 2px solid $yellow
       font-size: 15px
       font-weight: bold
-      color: $black
-      width: 278px
+      color: $black      
       height: 50px    
-      margin: 0 24px 15px 0
+
       display: flex
       align-items: center
-      text-decoration: underline
+      text-decoration: none
       &::before
          transition: 0.15s all
          content: ''
@@ -28,6 +21,7 @@
          position: absolute
          border: 1px solid $yellow
       &:hover
+         text-decoration: none
          &::before
             width: 100%
             opacity: 1
@@ -39,37 +33,22 @@
       right: 0
       height: 12px
       margin: 0
-
-   &__right
-      &-wrap
-         display: flex
-         flex-direction: row
+   &__wrap
+      display: flex
+      flex-direction: row
+      background: url(../img/replacement-windows.jpg) no-repeat top right
    &__slider
-      width: 100%
-      max-width: 550px
-      display: flex   
+      width: 550px
       height: 365px
-      position: relative   
-      background: url(../img/Aluminium-awning-windows.jpg) top left no-repeat
-   &__works-done
+      position: relative         
+      background: url(../img/Aluminium-awning-windows.jpg) center left no-repeat      
+   &__works
       display: flex
       flex-direction: column
-      text-align: center
-      padding-top: 132px
+      justify-content: flex-end
       padding-top: 32px
-      min-width: 330px
-      height: 365px
-      background: url(../img/replacement-windows.jpg)
-      background: rgba(0, 0,0, 0.1)
-   &__heading-works 
-      font-size: 20px
-      line-height: 24px
-      color: $blue
-      padding: 0 0 19px 50px
-      font-weight: bold
-      text-align: left
-   &__list-item
-      width: 100%      
+      background: rgba(255,255,255,0.95)         
+   &__list-item           
       font-size: 16px
       line-height: 23px
       padding: 0 31px 19px 87px
@@ -102,9 +81,9 @@
             position: absolute
             left: 50px
          &::before
-            width: 0px      
-   &__comments
-  
+            width: 0px
+
+   &__comments  
       padding-top: 25px
       display: flex
       img
@@ -137,6 +116,12 @@
          font-size: 16px
          padding: 13px 0 0 0
          color: $blue
+
+
+@media (max-width: 991px)
+   .projects
+      &__wrap
+         flex-direction: column
 
 
       

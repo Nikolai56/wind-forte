@@ -96,7 +96,7 @@
                     Наши специалисты свяжутся с вами
                     <br>в ближайшее время</p>
         
-                <form id="calculation-form" class="promo__card-form" action="#">
+                <form id="" class="" action="#">
                     <input type="name" required placeholder="Как Вас Зовут?" type="text">
                     <input type="phone" required placeholder="+7(ХХХ) ХХХ - ХХ - ХХ">
                     <input type="address" required placeholder="Адрес">
@@ -114,19 +114,18 @@
 <!-- PRODUCTS -->
 <section class="products">
     <p class="heading">Наша продукция</p>
-
     <div class="container">
-        <div class="products__wrap">
-            <a href="#!" class="products__elem"><img src="img/Okna.png">Пластиковые&nbsp;окна</a>
-            <a class="products__elem"><img src="img/Dveri.png">Пластиковые&nbsp;двери</a>
-            <a class="products__elem"><img src="img/Zaluzi-1.png">Жалюзи</a>
-            <a class="products__elem"><img src="img/Rolety.png">Роллеты</a>
-        </div>
-        <div class="products__wrap">    
-            <a class="products__elem"><img src="img/Steklopaket.png">Стеклопакеты</a>
-            <a class="products__elem"><img src="img/Osteklenie_lodziy.png">Остекление&nbsp;лоджий</a>
-            <a class="products__elem"><img src="img/Lodziy-1.png">Утепление&nbsp;лоджий</a>
-            <a class="products__elem"><img src="img/potolok_1-1.png">Натяжные&nbsp;потолки</a>
+        <div class="row">
+            <div class="col-lg-3 col-md-6"><a href="#!" class="products__elem"><img src="img/Okna.png">Пластиковые&nbsp;окна</a></div>
+            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/Dveri.png">Пластиковые&nbsp;двери</a></div>
+            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/Zaluzi-1.png">Жалюзи</a></div>
+            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/Rolety.png">Роллеты</a></div>
+        </div> 
+        <div class="row">    
+            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/Steklopaket.png">Стеклопакеты</a></div>
+            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/Osteklenie_lodziy.png">Остекление&nbsp;лоджий</a></div>
+            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/Lodziy-1.png">Утепление&nbsp;лоджий</a></div>
+            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/potolok_1-1.png">Натяжные&nbsp;потолки</a></div>
         </div>
         
     </div>
@@ -137,60 +136,57 @@
     <div class="container">
         <p class="heading">Наши проекты</p>
 
-        <div class="projects__wrap">
+        <div class="row">
 
-            <div class="projects__left"> 
-
-                <a href="#!" class="projects__elem active"><img class="projects__thumb" src="img/Okna.png">Окна<img src="img/svg/chevron_right_24px.svg" class="projects__arr-right-sm"></a>
-                <a href="#!" class="projects__elem"><img class="projects__thumb" src="img/Dveri.png">Двери</a>
-                <a href="#!" class="projects__elem"><img class="projects__thumb" src="img/Zaluzi-1.png">Жалюзи</a>
-                <a href="#!" class="projects__elem"><img class="projects__thumb" src="img/Rolety.png">Роллеты</a>
-                <a href="#!" class="projects__elem"><img class="projects__thumb" src="img/Steklopaket.png">Стеклопакеты</a>
-                <a href="#!" class="projects__elem"><img class="projects__thumb" src="img/Osteklenie_lodziy.png">Остекление&nbsp;лоджий</a>
-                <a href="#!" class="projects__elem"><img class="projects__thumb" src="img/Lodziy-1.png">Утепление&nbsp;лоджий</a>
-                <a class="projects__elem"><img class="projects__thumb" src="img/potolok_1-1.png">Натяжные&nbsp;потолки</a>
+            <div class="col-lg-3 md-12">
+                <div class="projects__left-wrap">
+                    <a class="projects__elem active" href="#!"><img class="projects__thumb" src="img/Okna.png">Окна<img src="img/svg/chevron_right_24px.svg" class="projects__arr-right-sm"></a>
+                    <a class="projects__elem" href="#!"><img class="projects__thumb" src="img/Dveri.png">Двери</a>
+                    <a class="projects__elem" href="#!"><img class="projects__thumb" src="img/Zaluzi-1.png">Жалюзи</a>
+                    <a class="projects__elem" href="#!"><img class="projects__thumb" src="img/Rolety.png">Роллеты</a>
+                    <a class="projects__elem" href="#!"><img class="projects__thumb" src="img/Steklopaket.png">Стеклопакеты</a>
+                    <a class="projects__elem" href="#!"><img class="projects__thumb" src="img/Osteklenie_lodziy.png">Остекление&nbsp;лоджий</a>
+                    <a class="projects__elem" href="#!"><img class="projects__thumb" src="img/Lodziy-1.png">Утепление&nbsp;лоджий</a>
+                    <a class="projects__elem" href="#!"><img class="projects__thumb" src="img/potolok_1-1.png">Натяжные&nbsp;потолки</a>
+                </div>
 
             </div>
             
-            <div class="project__right">
+            <div class="col-9">
+                <div class="projects__right">
+                    <div class="projects__wrap">
 
-                <div class="projects__right-wrap">
-
-                    <div class="projects__slider"> 
-                       
-                        <div class="arrows projects__arrows">
-                            <div class="arrows__square">
-                                <a href="#!" class="arrows__left"></a>
+                        <div class="projects__slider"> 
+                            <div class="arrows">
+                                <div class="arrows__square"><a href="#!" class="arrows__left"></a></div>
+                                <div class="arrows__square"><a href="#!" class="arrows__right"></a></div>               
                             </div>
-                            <div class="arrows__square">
-                                <a href="#!" class="arrows__right"></a>
-                            </div>               
+                        </div>
+                
+                        <div class="projects__works">                
+                            <p class="heading heading_works">Выполненные&nbsp;работы</p>
+                            <ul class="works-list">
+                                <li class="projects__list-item">Демонтаж старых окон</li>
+                                <li class="projects__list-item">Установка  пластиковых<br>окон Forte 58, 3 камеры,<br> ширина 58</li>
+                                <li class="projects__list-item">Установка подоконников</li>
+                                <li class="projects__list-item">Отделка  откосов</li>
+                                <li class="projects__list-item"><div><span>Итого:</span></div><div>58 350 ₽</div></li>
+                            </ul>
                         </div>
                     </div>
 
-                    <div class="projects__works-done">                
-                        <p class="projects__heading-works">Выполненные работы</p>
-                        <ul class="works-list">
-                            <li class="projects__list-item">Демонтаж старых окон</li>
-                            <li class="projects__list-item">Установка  пластиковых<br>окон Forte 58, 3 камеры,<br> ширина 58</li>
-                            <li class="projects__list-item">Установка подоконников</li>
-                            <li class="projects__list-item">Отделка  откосов</li>
-                            <li class="projects__list-item"><div><span>Итого:</span></div><div>58 350 ₽</div></li>
-                        </ul>
-                    </div>
-    
-                </div>
+                    <div class="projects__comments">
+                        <img src="img/camera-banner7-img3.jpg">
+                        <div class="projects__comments-spacer"></div>
 
-                <div class="projects__comments">
-                    <img src="img/camera-banner7-img3.jpg">
-                    <div class="projects__comments-spacer"></div>
-
-                    <div class="projects__comment">Спасибо большое впервую очередь бригаде № 4 Прохорову Андрею за отлично выполненую работу. Сделано все аккуратно, професионально. И спасибо всему коллективу фирмы окна Форте. Спасибо девушкам менеджерам очень приятные, доброжелательные
-                        <p>Наталья</p>                    
-                        <div class="projects__comment-quote"></div>
+                        <div class="projects__comment">Спасибо большое впервую очередь бригаде № 4 Прохорову Андрею за отлично выполненую работу. Сделано все аккуратно, професионально. И спасибо всему коллективу фирмы окна Форте. Спасибо девушкам менеджерам очень приятные, доброжелательные
+                            <p>Наталья</p>                    
+                            <div class="projects__comment-quote"></div>
+                        </div>
                     </div>
                 </div>
-            </div>             
+
+            </div>        
         </div>
     </div>
 </section>
@@ -199,9 +195,9 @@
 <section class="calc">
     <div class="container">
         <p class="heading">Узнайте стоимость работ</p>
-        <div class="calc__wrapper">
+        <div class="row">
 
-            <div class="calc__left">
+            <div class="col-md-6">
 
                 <p class="heading heading_blue-md">Выберите тип продукции</p>
     
@@ -252,17 +248,21 @@
                         </form>
                     </li>
                 </ul>
-
+ 
                 <input type="checkbox">Монтаж<input type="checkbox">Отделка откоса
             </div>
+
     
-            <div class="calc__right">
-                <p>Задайте параметры</p>
+            <div class="col-md-6">
+                <p class="heading heading_blue-md">Задайте параметры</p>
                 <p>Нажмите на створку для выбора типа открывания</p>
-                <p><input type="text" placeholder="1500">мм</p>
+                <div>
+                    <input type="text" placeholder="1500">мм
+                </div>
                 <div>
                     <div><input class="VERTICAL" type="text" placeholder="1500">мм</div>
-                    <div><img src="">Поворотная вправо<img src="">Поворотно-откидная левая</div>
+                    <div><img src="">Поворотная вправо</div>
+                    <div><img src="">Поворотно-откидная левая</div>
                 </div>
                 <button>Добавить в заказ</button>
             </div>

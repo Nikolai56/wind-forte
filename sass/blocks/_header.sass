@@ -31,8 +31,7 @@
             font-size: 20px
             padding-bottom: 5px
          span
-            font-size: 14px
-    
+            font-size: 14px    
 nav
    background-color: $blue
    width: 100%
@@ -65,7 +64,8 @@ nav
 
 @media (max-width: 991px)
    .header
-      height: 80px
+      background: none
+      height: 75px
       &__logo
          img
             width: 75%
@@ -101,4 +101,54 @@ nav
    .menu
       &__link  
          font-size: .8em
+
+
+
+@media (max-width: 767px)
+
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		left: -100%
+		width: 50%
+		height: 100vh
+		padding: 20px 15px
+		background-color: rgba(0,0,0, .8)
+		transition: 0.6s all
+		&_active 
+			left: 0
+		&__item 
+			padding-right: 0
+			border: none
+			margin: 10px 0
+		&__link 
+			font-size: 20px
+
+	.hamburger
+		display: block
+		position: absolute
+		right: 18px
+		top: 43px
+		transform: translateY(-50%)
+		width: 26px
+		height: 30px
+		span 
+			display: block
+			height: 2px
+			width: 100%
+			background-color: $blue
+			margin-bottom: 5px
+			transition: 0.5s all
+		&_active 
+			span 
+				margin-bottom: -2px 
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
         
