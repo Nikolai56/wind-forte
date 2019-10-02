@@ -1,5 +1,6 @@
 .calc
    background-color: #EFEFEF
+   padding-bottom: 70px
    &__wrap
       background-color: $white
       display: flex
@@ -8,66 +9,79 @@
       width: 50%
       margin: 0 auto
       padding: 5%
-      border: 1px solid yellow
    &__left
       border-right: 4px solid #EFEFEF
+      img
+         padding: 28px 15px 69px 0
    &__specs
       &-wrap
          display: flex
          flex-direction: row
          justify-content: space-between
-      &-name, &-value
+      &-name, &-value       
+         &:last-child
+            padding-bottom: 30px
          li
             height: 50px
             display: flex
             align-items: center
-            border: 1px solid yellow
             font-size: 17px
-            font-weight: bold
-     
-      
+            font-weight: bold            
+            margin-bottom: 20px
+   &__checkbox
+      .pretty
+         &:first-child
+            padding: 0 30px 0 0
 
    &__wind
       &-width
          display: flex
          justify-content: center
          margin-bottom: 0
+         position: absolute
+         top: -30px
+         left: 35%
       &-wrap
          display: flex
          flex-direction: row
-         position: relative
          justify-content: center
+         button
+            margin-top: 79px  
+             
+
       &-height
          transform: rotate(270deg)
          position: absolute
-         top: 45%
+         top: 40%
          left: -55px
          &_wrap
             width: 0px
+         
       &-elem
          font-size: 12px
-         color: #9e9e9e
-         img
-            width: 130px
-            height: 273px
+         text-align: center
          position: relative
-         margin: 8px
+         color: #9e9e9e
+         height: 273px
+         img            
+            height: 273px
+            
+         position: relative
+         margin-top: 66px         
          span
             position: absolute
-            top: 88%
-            left: 30%
+            top: 80%
+            left: 16%
          p
             position: absolute
-            top: 88%
-            left: 18%
+            top: 80%
+            left: 61%
          
       &-width, &-height
          width: 77px
          height: 35px
          font-size: 16px
    
-      .col-md-6
-         display: flex
-         justify-content: center
+    
       
    

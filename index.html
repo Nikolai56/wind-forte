@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/pretty-checkbox.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -212,10 +213,10 @@
                     </select>
                 </form>
                 
-                <img src="img/lay1-thumb.png">
-                <img src="img/lay2-thumb.png">
-                <img src="img/lay3-thumb.png">
-                <img src="img/lay4-thumb.png">
+                <img src="img/wind-sm-1.png">
+                <img src="img/wind-sm-2.png">
+                <img src="img/wind-sm-3.png">
+                <img src="img/wind-sm-4.png">
                 
                 <p class="heading heading_blue-md">Характеристики</p>
 
@@ -229,7 +230,7 @@
 
                     <ul class="calc__specs-value">
 
-                        <li><form  action="">
+                        <li><form action="">
                             <select size="1">
                                 <option value="Forte_58">Forte 58</option><option value="Forte_70">Forte 70</option><option value="Ivaper_62">Ivaper 62</option><option value="Ivaper_70">Ivaper 70</option><option value="Ivaper_74">Ivaper 74</option>
                             </select>
@@ -246,34 +247,48 @@
                                 <option value="none">Нет</option><option value="w0_100">менее 100мм</option><option value="w100_150">100-150мм</option><option value="w150_200">150-200мм</option><option value="w200_250">200-250мм</option><option value="w250_400">250-400мм</option>
                             </select>
                         </form></li>
-
                     </ul>
+                </div>                
+                
+                <div class="calc__checkbox">
+                        <div class="pretty p-default p-curve">
+                            <input type="checkbox" />
+                            <div class="state p-warning">
+                                <label>Монтаж</label>
+                            </div>
+                        </div>
+                        <div class="pretty p-default p-curve">
+                            <input type="checkbox" />
+                            <div class="state p-warning">
+                                <label>Отделка откоса</label>
+                            </div>
+                        </div>
+
                 </div>
-                
-                
- 
-                <input type="checkbox">Монтаж<input type="checkbox">Отделка откоса
+
             </div>
 
     
             <div class="calc__right">
                 <p class="heading heading_blue-md">Задайте параметры</p>
                 <p>Нажмите на створку для выбора типа открывания</p>
-                <div class="calc__wind-wrap">
-                    <form action="">
-                        <input class="calc__wind-width" type="text" placeholder="1500"> 
-                    </form>                        
-                </div>
+
 
                 <div class="calc__wind-wrap">
-                    <div class="calc__wind-height_wrap">
-                        <form action=""><input class="calc__wind-height" type="text" placeholder="1500"></form>                        
+                    <div class="calc__wind-elem">
+                        <img src="img/windows-sharper.png"><span>Поворотная<br>вправо</span><p>Поворотно-<br>откидная левая</p>
+                        <div class="calc__wind-wrap">
+                            <form action="">
+                                <input class="calc__wind-width" type="text" placeholder="1500" />
+                            </form>                
+                        </div>
+                        <div class="calc__wind-height_wrap">
+                            <form action=""><input class="calc__wind-height" type="text" placeholder="1500"></form>                        
+                        </div>
                     </div>
-                    <div class="calc__wind-elem"><img src="img/wind-l.png"><span>Поворотная<br>вправо</span></div>
-                    <div class="calc__wind-elem"><img src="img/wind-r.png"><p>Поворотно-откидная левая</p></div>
                 </div>
                 <div class="calc__wind-wrap">
-                    <button>Добавить в заказ</button>
+                    <button class="button">Добавить в заказ</button>
                 </div>
             </div>
         </div>
