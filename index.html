@@ -116,16 +116,16 @@
     <p class="heading">Наша продукция</p>
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6"><a href="#!" class="products__elem"><img src="img/Okna.png">Пластиковые&nbsp;окна</a></div>
-            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/Dveri.png">Пластиковые&nbsp;двери</a></div>
-            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/Zaluzi-1.png">Жалюзи</a></div>
-            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/Rolety.png">Роллеты</a></div>
+            <div class="col-md-3 col-xs-12"><a href="#!" class="products__elem"><img src="img/Okna.png">Пластиковые&nbsp;окна</a></div>
+            <div class="col-md-3 col-xs-12"><a class="products__elem"><img src="img/Dveri.png">Пластиковые&nbsp;двери</a></div>
+            <div class="col-md-3 col-xs-12"><a class="products__elem"><img src="img/Zaluzi-1.png">Жалюзи</a></div>
+            <div class="col-md-3 col-xs-12"><a class="products__elem"><img src="img/Rolety.png">Роллеты</a></div>
         </div> 
         <div class="row">    
-            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/Steklopaket.png">Стеклопакеты</a></div>
-            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/Osteklenie_lodziy.png">Остекление&nbsp;лоджий</a></div>
-            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/Lodziy-1.png">Утепление&nbsp;лоджий</a></div>
-            <div class="col-lg-3 col-md-6"><a class="products__elem"><img src="img/potolok_1-1.png">Натяжные&nbsp;потолки</a></div>
+            <div class="col-md-3 col-xs-12"><a class="products__elem"><img src="img/Steklopaket.png">Стеклопакеты</a></div>
+            <div class="col-md-3 col-xs-12"><a class="products__elem"><img src="img/Osteklenie_lodziy.png">Остекление&nbsp;лоджий</a></div>
+            <div class="col-md-3 col-xs-12"><a class="products__elem"><img src="img/Lodziy-1.png">Утепление&nbsp;лоджий</a></div>
+            <div class="col-md-3 col-xs-12"><a class="products__elem"><img src="img/potolok_1-1.png">Натяжные&nbsp;потолки</a></div>
         </div>
         
     </div>
@@ -138,7 +138,7 @@
 
         <div class="row">
 
-            <div class="col-md-12 col-lg-3">
+            <div class="col-lg-3 col-md-12">
                 <div class="projects__left-wrap">
                     <a class="projects__elem active" href="#!"><img class="projects__thumb" src="img/Okna.png">Окна<img src="img/svg/chevron_right_24px.svg" class="projects__arr-right-sm"></a>
                     <a class="projects__elem" href="#!"><img class="projects__thumb" src="img/Dveri.png">Двери</a>
@@ -152,7 +152,7 @@
 
             </div>
             
-            <div class="col-md-12 col-lg-9">
+            <div class="col-lg-9 col-md-12">
                 <div class="projects__right">
                     <div class="projects__wrap">
 
@@ -195,9 +195,9 @@
 <section class="calc">
     <div class="container">
         <p class="heading">Узнайте стоимость работ</p>
-        <div class="row">
+        <div class="row calc__wrapper">
 
-            <div class="col-md-6">
+            <div class="col-6">
 
                 <p class="heading heading_blue-md">Выберите тип продукции</p>
     
@@ -253,16 +253,24 @@
             </div>
 
     
-            <div class="col-md-6">
+            <div class="col-6">
                 <p class="heading heading_blue-md">Задайте параметры</p>
                 <p>Нажмите на створку для выбора типа открывания</p>
                 <div>
-                    <input type="text" placeholder="1500">мм
+                    <form action="">
+                        <input class="calc__wind-width" type="text" placeholder="1500"> 
+                    </form>
+                        
                 </div>
-                <div>
-                    <div><input class="VERTICAL" type="text" placeholder="1500">мм</div>
-                    <div><img src="">Поворотная вправо</div>
-                    <div><img src="">Поворотно-откидная левая</div>
+                <div class="calc__wind-wrap">
+                    <div class="calc__wind-height_wrap">
+                        <form action="">
+                            <input class="calc__wind-height" type="text" placeholder="1500"> 
+                        </form>
+                        
+                    </div>
+                    <div class="calc__wind-elem"><img src="img/wind-l.png"><span>Поворотная<br>вправо</span></div>
+                    <div class="calc__wind-elem"><img src="img/wind-r.png"><p>Поворотно-откидная левая</p></div>
                 </div>
                 <button>Добавить в заказ</button>
             </div>
@@ -272,7 +280,7 @@
 </section>
 
    
-        <!-- <div class="wincalc-module-body">
+        <!- <div class="wincalc-module-body">
             <select size="1">
                 <option value="windows">Окна</option>
                 <option value="doors">Балконные двери</option>
@@ -344,10 +352,10 @@
                     <div class="wincalc-module-body">
                         <select size="1">
                             <option value="not">Да</option>
-                            <option value="gor">Нет</option> -->
+                            <option value="gor">Нет</option> ->
 
 
-<!-- FACTS -->
+<!- FACTS ->
 <section class="facts">
     <div class="container">
                 
@@ -485,7 +493,7 @@
         </div>
     </div>
 </section>
-<!-- REPEAT SECTION - CALL- WORKER -->
+<!- REPEAT SECTION - CALL- WORKER ->
 <section class="call-worker">
         <div class="container">
             <p>Бесплатный вызов замерщика</p>

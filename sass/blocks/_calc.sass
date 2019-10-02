@@ -1,26 +1,61 @@
 .calc
    background-color: #EFEFEF
    &__wrapper
-      display: flex
-      flex-direction: row
       background-color: $white
+      padding: 50px 50px 50px 50px
    &__left
       padding: 44px 53px 50px 55px
       form
          height: 50px
-      ul
+   &__details
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      border: 1px solid $yellow
+      li
+         border: 1px solid $yellow
+         display: flex
+         align-items: center
+
+   &__wind
+      &-width
+         display: flex
+         justify-content: center
+      &-wrap
          display: flex
          flex-direction: row
+         position: relative
+      &-height
+         transform: rotate(270deg)
+         position: absolute
+         top: 45%
+         left: -75px
+         &_wrap
+            width: 0px
+      &-elem
+         font-size: 12px
+         color: #9e9e9e
+         img
+            width: 130px
+            height: 273px
+         position: relative
+         margin: 8px
+         span
+            position: absolute
+            top: 88%
+            left: 30%
+         p
+            position: absolute
+            top: 88%
+            left: 18%
+         
+      &-width, &-height
+         width: 77px
+         height: 35px
+         font-size: 16px
+   
+      .col-md-6
+         display: flex
          justify-content: center
-         border: 1px solid $yellow
-         li
-            border: 1px solid $yellow
-            display: flex
-            align-items: center
-            justify-content: left
-            width: 180px
-            height: 50px
-            margin: 10px 0
-
-   &__right
-      padding: 44px 124px 120px 89px
+      
+   
