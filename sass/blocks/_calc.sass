@@ -4,8 +4,9 @@
       background-color: $white
       display: flex
       flex-direction: row
-   &__left, &__right
+   &__left, &__right      
       width: 50%
+      margin: 0 auto
       padding: 5%
       border: 1px solid yellow
    &__left
@@ -30,15 +31,17 @@
       &-width
          display: flex
          justify-content: center
+         margin-bottom: 0
       &-wrap
          display: flex
          flex-direction: row
          position: relative
+         justify-content: center
       &-height
          transform: rotate(270deg)
          position: absolute
          top: 45%
-         left: -75px
+         left: -55px
          &_wrap
             width: 0px
       &-elem

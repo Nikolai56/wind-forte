@@ -34,7 +34,9 @@
 
    .projects
       &__wrap
-         flex-direction: column
+         flex-direction: column        
+         max-width: 550px
+         margin: 0 auto
       &__thumb
          display: none
       &__left-wrap
@@ -57,6 +59,7 @@
       &__list-item
          font-size: 1.2em
          margin-bottom: 1em
+         max-width: 550px
       &__slider
             max-width: 550px
             width: auto
@@ -134,6 +137,7 @@
 					transform: translateY(3px) rotate(45deg)
 
 @media (max-width: 767px)
+
    .promo
       background-position: -200px 0px
       &__wrap
@@ -172,3 +176,13 @@
          padding-right: 0
          &:last-child, &:nth-child(3), .header__phone-wrap
             display: none
+
+   
+   .calc
+      &__wrap      
+         flex-direction: column
+      &__left, &__right
+         width: auto
+         margin: 0 auto
+      &__left
+         border: 0
