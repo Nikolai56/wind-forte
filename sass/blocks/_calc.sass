@@ -1,21 +1,30 @@
 .calc
    background-color: #EFEFEF
-   &__wrapper
+   &__wrap
       background-color: $white
-      padding: 50px 50px 50px 50px
-   &__left
-      padding: 44px 53px 50px 55px
-      form
-         height: 50px
-   &__details
       display: flex
       flex-direction: row
-      justify-content: space-around
-      border: 1px solid $yellow
-      li
-         border: 1px solid $yellow
+   &__left, &__right
+      width: 50%
+      padding: 5%
+      border: 1px solid yellow
+   &__left
+      border-right: 4px solid #EFEFEF
+   &__specs
+      &-wrap
          display: flex
-         align-items: center
+         flex-direction: row
+         justify-content: space-between
+      &-name, &-value
+         li
+            height: 50px
+            display: flex
+            align-items: center
+            border: 1px solid yellow
+            font-size: 17px
+            font-weight: bold
+     
+      
 
    &__wind
       &-width

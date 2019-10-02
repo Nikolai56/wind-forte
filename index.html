@@ -195,13 +195,14 @@
 <section class="calc">
     <div class="container">
         <p class="heading">Узнайте стоимость работ</p>
-        <div class="row calc__wrapper">
 
-            <div class="col-6">
+        <div class="calc__wrap">
+
+            <div class="calc__left">
 
                 <p class="heading heading_blue-md">Выберите тип продукции</p>
     
-                <form class="form form_dropdown" action="">
+                <form class="form" action="">
                     <select name="Тип продукции" id="">
                         <option value="Окна">Окна</option>
                         <option value="Двери">Двери</option>
@@ -217,43 +218,45 @@
                 <img src="img/lay4-thumb.png">
                 
                 <p class="heading heading_blue-md">Характеристики</p>
-                
-                <ul class="calc__details">
-                    <li>Тип профиля</li>
-                    <li>
-                        <form class="form form_dropdown" action="">
+
+                <div class="calc__specs-wrap">
+
+                    <ul class="calc__specs-name">
+                        <li>Тип профиля</li>
+                        <li>Ширина<br>подоконника</li>
+                        <li>Ширина отлива</li>
+                    </ul>
+
+                    <ul class="calc__specs-value">
+
+                        <li><form  action="">
                             <select size="1">
                                 <option value="Forte_58">Forte 58</option><option value="Forte_70">Forte 70</option><option value="Ivaper_62">Ivaper 62</option><option value="Ivaper_70">Ivaper 70</option><option value="Ivaper_74">Ivaper 74</option>
                             </select>
-                        </form>
-                    </li>
-                </ul>
-                <ul class="calc__details">
-                    <li>Ширина подоконника</li>
-                    <li>
-                        <form class="form form_dropdown" action="">
+                        </form></li>
+
+                        <li><form action="">
                             <select size="1">
                                 <option value="none">Нет</option><option value="w150">150мм</option><option value="w200">200мм</option><option value="w250">250мм</option><option value="w300">300мм</option><option value="w350">350мм</option><option value="w400">400мм</option><option value="w450">450мм</option><option value="w500">500мм</option><option value="w550">550мм</option><option value="w600">600мм</option>
                             </select>
-                        </form>
-                    </li>
-                </ul>
-                <ul class="calc__details">
-                    <li>Ширина отлива</li>
-                    <li>                   
-                        <form class="form form_dropdown" action="">
+                        </form></li>
+
+                        <li><form action="">
                             <select size="1">
                                 <option value="none">Нет</option><option value="w0_100">менее 100мм</option><option value="w100_150">100-150мм</option><option value="w150_200">150-200мм</option><option value="w200_250">200-250мм</option><option value="w250_400">250-400мм</option>
                             </select>
-                        </form>
-                    </li>
-                </ul>
+                        </form></li>
+
+                    </ul>
+                </div>
+                
+                
  
                 <input type="checkbox">Монтаж<input type="checkbox">Отделка откоса
             </div>
 
     
-            <div class="col-6">
+            <div class="calc__right">
                 <p class="heading heading_blue-md">Задайте параметры</p>
                 <p>Нажмите на створку для выбора типа открывания</p>
                 <div>
@@ -280,7 +283,7 @@
 </section>
 
    
-        <!- <div class="wincalc-module-body">
+        <!-- <div class="wincalc-module-body">
             <select size="1">
                 <option value="windows">Окна</option>
                 <option value="doors">Балконные двери</option>
@@ -352,13 +355,13 @@
                     <div class="wincalc-module-body">
                         <select size="1">
                             <option value="not">Да</option>
-                            <option value="gor">Нет</option> ->
+                            <option value="gor">Нет</option> -->
 
 
-<!- FACTS ->
+<!-- FACTS -->
 <section class="facts">
     <div class="container">
-                
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>       
         <p>За более чем два десятилетия успешной работы, Forte из небольшой компании сумела стать одним из крупных оконных предприятий. Уже много лет мы занимаем лидирующее положение на рынке светопрозрачных конструкций Санкт-Петербурга и работаем во всех его сегментах. </p>
         <div class="facts__counter">
             <p>Сегодня</p>
@@ -493,7 +496,7 @@
         </div>
     </div>
 </section>
-<!- REPEAT SECTION - CALL- WORKER ->
+<!-- REPEAT SECTION - CALL- WORKER -->
 <section class="call-worker">
         <div class="container">
             <p>Бесплатный вызов замерщика</p>
