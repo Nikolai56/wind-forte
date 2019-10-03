@@ -4,7 +4,7 @@
    text-align: center   
    margin: 0 auto
    &__paragraph
-      max-width: 55%
+      max-width: 75%
       text-align: center
       margin: 0 auto
    &__counter
@@ -71,13 +71,14 @@
          img
             position: absolute
             top: -20%
-            right: 35%
+            right: 135px
          &:last-child
             img
-               left: 25%
-         width: 400px
+               left: 100px
+         min-width: 400px
+         max-width: 400px
          padding: 100px 3% 2%         
-         margin: 0 2%
+         margin: 0 1%
          min-width: 30%
          min-height: 182px         
 
@@ -104,20 +105,36 @@
       margin: 46px 0 0
       display: flex
       justify-content: space-around
-      
       li
+         border-radius: 10px
          position: relative
          margin: 0 10px
-         img
-            border-radius: 10px
+         width: 580px
+         height: 280px          
          span
             position: absolute
             bottom: 5%
-            left: 30%
+            left: 30px
             color: $white
             font-size: 20px
             line-height: 24px
+            background: url(../img/svg/facts_g-city_24px.svg) center center no-repeat
+            background-position-x: 0px
+            background-position-y: 1px
+            padding-left: 30px
+      &-1         
+         &:nth-child(1)
+            background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-sevdol.png) center center no-repeat
+         &:nth-child(2)
+            background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-clearsky.png)
+      &-2
+         &:nth-child(1)
+            background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-london.jpg)
+         &:nth-child(2)
+            background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-legend.png) 
 
+
+ 
 
       
          
