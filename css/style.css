@@ -1550,6 +1550,23 @@ select {
   background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-legend.png);
 }
 
+@media (max-width: 767px) {
+  .facts__gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 46px 0 0;
+    margin: 0;
+  }
+  .facts__gallery:last-child {
+    padding: 0;
+  }
+  .facts__gallery li {
+    margin: 0 0 20px;
+  }
+}
+
 .call-measure {
   margin-top: 70px;
   color: #FFF;
@@ -1608,6 +1625,12 @@ select {
 
 .call-measure ul button {
   min-width: 211px;
+}
+
+@media (max-width: 991px) {
+  .call-measure {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
