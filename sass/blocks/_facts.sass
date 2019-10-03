@@ -1,10 +1,11 @@
 
 .facts
    line-height: 23px
-   text-align: center
-   p
-      padding: 0 10%
-   
+   text-align: center   
+   &__paragraph
+      max-width: 55%
+      text-align: center
+      margin: 0 auto
    &__counter
       background-color: $blue
       border-radius: 10px
@@ -52,6 +53,27 @@
          text-align: left
          background: $white
          padding: 2%
-         
+
+   &__medals
+      margin: 86px 0 65px
+      display: flex
+      justify-content: center
+      .col-3
+         border: 1px solid $border-gray
+         border-radius: 10px
+         padding: 106px 2% 33px
+         position: relative
+         margin: 0 10px
+         img
+            position: absolute
+            top: -20%       
+            left: 25%
+         &:last-child
+            img
+               left: 20%
+   &__partners
+      height: 181px
+      
+      
          
 
