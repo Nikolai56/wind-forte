@@ -2,6 +2,7 @@
 .facts
    line-height: 23px
    text-align: center   
+   margin: 0 auto
    &__paragraph
       max-width: 55%
       text-align: center
@@ -58,21 +59,32 @@
       margin: 86px 0 65px
       display: flex
       justify-content: center
-      .col-3
+      &-box
          border: 1px solid $border-gray
          border-radius: 10px
-         padding: 106px 2% 33px
+         padding: 100px 3% 2%
          position: relative
-         margin: 0 10px
+         margin: 0 2%
+         min-width: 30%
+         min-height: 182px
+         
          img
             position: absolute
-            top: -20%       
-            left: 25%
+            top: -30%       
+            left: 35%
          &:last-child
             img
-               left: 20%
-   &__partners
-      height: 181px
+               left: 30%
+   &__partners      
+      margin-top: 33px
+      display: flex
+      justify-content: space-around      
+      border: 1px solid $border-gray
+      border-radius: 10px
+      padding: 3%
+      li
+         padding: 0 1%
+
       
       
          
