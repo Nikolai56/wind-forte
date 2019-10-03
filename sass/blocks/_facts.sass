@@ -1,1 +1,57 @@
-$black: #000
+
+.facts
+   line-height: 23px
+   text-align: center
+   p
+      padding: 0 10%
+   
+   &__counter
+      background-color: $blue
+      border-radius: 10px
+      width: 440px
+      height: 211px
+      color: white
+      font-size: 20px
+      line-height: 24px
+      margin: 42px auto 26px     
+      p
+         padding-top: 25px
+
+   &__counter-ul
+      padding-top: 23px
+      display: flex
+      flex-direction: row
+      justify-content: center
+
+   &__numbers
+      padding-bottom: 67px
+      .col-4
+         min-width: 400ppx
+         position: relative
+         &:first-child
+            p
+               left: 55%
+         &:last-child
+            p
+               left: 65%
+      span
+         font-weight: normal
+         font-size: 100px
+         line-height: 120px
+         text-align: left
+         color: $blue
+      p
+         font-weight: normal
+         font-size: 16px
+         line-height: 19px
+         position: absolute
+         left: 50%
+         top: 50%
+         max-width: 300px  
+         height: 57px
+         text-align: left
+         background: $white
+         padding: 2%
+         
+         
+
