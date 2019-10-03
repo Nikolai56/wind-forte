@@ -121,30 +121,45 @@
             background: url(../img/svg/facts_g-city_24px.svg) center center no-repeat
             background-position-x: 0px
             background-position-y: 1px
-            padding-left: 30px
-      &-1         
+            padding-left: 30px               
          &:nth-child(1)
             background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-sevdol.png) center center no-repeat
          &:nth-child(2)
             background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-clearsky.png)
-      &-2
-         &:nth-child(1)
-            background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-london.jpg)
-         &:nth-child(2)
-            background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-legend.png)
+      
+.gallery_2
+   margin-top: 20px
+   li
+      &:nth-child(1)
+         background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-london.jpg)
+      &:nth-child(2)
+         background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-legend.png)
 
+@media (max-width: 991px)
+   .facts
+      &__medals
+         width: auto
 @media (max-width: 767px)
    .facts      
       &__gallery
          flex-direction: column
          padding: 46px 0 0
          &:last-child
-            padding: 0
-         margin: 0
+            padding: 0            
+         margin: 0         
          li
-            margin: 0 0 20px                  
-            
-            
+            margin: 0 0 20px  
+            width: auto
+
+@media (max-width: 575px)
+   .facts 
+      &__counter
+         width: auto
+         input
+            width: 35px
+            margin: 0 2px
+            padding: 0 auto
+            font-size: 1.4em
 
                
 

@@ -1530,24 +1530,34 @@ select {
   padding-left: 30px;
 }
 
-.facts__gallery-1:nth-child(1) {
+.facts__gallery li:nth-child(1) {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 59, 59, 0)), to(rgba(57, 57, 57, 0.8))), url(../img/facts_g-sevdol.png) center center no-repeat;
   background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-sevdol.png) center center no-repeat;
 }
 
-.facts__gallery-1:nth-child(2) {
+.facts__gallery li:nth-child(2) {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 59, 59, 0)), to(rgba(57, 57, 57, 0.8))), url(../img/facts_g-clearsky.png);
   background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-clearsky.png);
 }
 
-.facts__gallery-2:nth-child(1) {
+.gallery_2 {
+  margin-top: 20px;
+}
+
+.gallery_2 li:nth-child(1) {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 59, 59, 0)), to(rgba(57, 57, 57, 0.8))), url(../img/facts_g-london.jpg);
   background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-london.jpg);
 }
 
-.facts__gallery-2:nth-child(2) {
+.gallery_2 li:nth-child(2) {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 59, 59, 0)), to(rgba(57, 57, 57, 0.8))), url(../img/facts_g-legend.png);
   background: linear-gradient(to bottom, rgba(59, 59, 59, 0), rgba(57, 57, 57, 0.8)), url(../img/facts_g-legend.png);
+}
+
+@media (max-width: 991px) {
+  .facts__medals {
+    width: auto;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1564,6 +1574,19 @@ select {
   }
   .facts__gallery li {
     margin: 0 0 20px;
+    width: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .facts__counter {
+    width: auto;
+  }
+  .facts__counter input {
+    width: 35px;
+    margin: 0 2px;
+    padding: 0 auto;
+    font-size: 1.4em;
   }
 }
 
