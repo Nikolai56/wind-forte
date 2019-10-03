@@ -79,20 +79,46 @@
          padding: 100px 3% 2%         
          margin: 0 2%
          min-width: 30%
-         min-height: 182px
-         
+         min-height: 182px         
 
    &__partners      
       margin: 33px 0 61px
       display: flex
-      justify-content: space-around      
+      justify-content: space-around
+      align-items: center
       border: 1px solid $border-gray
       border-radius: 10px
-      padding: 3%
+      padding: 10px
       li
-         padding: 0 1%
+         position: relative
+         margin: 0 10px         
+         span
+            position: absolute
+            bottom: 5%
+            left: 30%
+            color: $white
+            font-size: 20px
+            line-height: 24px
 
+   &__gallery      
+      margin: 46px 0 0
+      display: flex
+      justify-content: space-around
       
+      li
+         position: relative
+         margin: 0 10px
+         img
+            border-radius: 10px
+         span
+            position: absolute
+            bottom: 5%
+            left: 30%
+            color: $white
+            font-size: 20px
+            line-height: 24px
+
+
       
          
 
