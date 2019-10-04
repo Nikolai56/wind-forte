@@ -1,15 +1,79 @@
 .team
-   position: relative
-   div      
-      width: 280px
-      height: 280px
+   padding-bottom: 58px
+   div  
       border-radius: 50%
       background: url(../img/team-1.jpg) center center no-repeat
-      margin: 0 auto
-      padding-top: 300px      
+      background-size: 100%      
+      padding-top: 300px    
       text-align: center
       h3
          font-weight: bold
       h4
          padding-top: 4px
+         font-weight: 0.8em
+         font-weight: bold
+         color: $blue
+
+.adv
+   a      
+      width: 200px
+      height: 250px
+      padding-top: 160px
+      text-align: center
+      color: $black
+      &:nth-child(1)
+         background: url(../img/advant-1.png) center center no-repeat
+      &:nth-child(2)
+         background: url(../img/advant-2.png) center center no-repeat
+      &:nth-child(3)
+         background: url(../img/advant-3.png) center center no-repeat
+      &:nth-child(4)
+         background: url(../img/advant-4.png) center center no-repeat
+      &:nth-child(5)
+         background: url(../img/advant-5.png) center center no-repeat
+      &:nth-child(6)
+         background: url(../img/advant-6.png) center center no-repeat
+      h4      
+         font-weight: 1em
+         font-weight: bold
+      p
+         font-weight: 0.8em
+         padding-top: 11px
+.map
+   background: url(../img/map-2.png) center (center/cover) no-repeat
+
+   &__form
+      width: 380px
+      height: 450px
+      background-color: $blue
+      color: $white
+      padding-top: 30px
+      padding-left: 122px
+      p
+         font-size: 15px
+         padding-top: 6px
+      h4
+         position: relative
+         padding-top: 38px
+         padding-bottom: 6px
+         font-size: 17px
+         color: $yellow
+         &:nth-child(1), &::before
+            content: '' 
+            background-color: $yellow             
+            background-image: url(../img/map-loc.png) center center no-repeat
+            position: absolute
+            left: 0
+            top: 0
+            display: block
+            height: 2px
+            width: 30px
+            
+            border: 20px solid $yellow
+            
+      h3
+         font-size: 18px
+         text-transform: uppercase
+      a
+         color: $yellow
 
