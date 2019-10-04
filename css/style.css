@@ -1855,6 +1855,10 @@ select {
   width: 60%;
 }
 
+.wind_line ul li:last-child:before {
+  width: 15%;
+}
+
 .wind_line ul li::before {
   content: '';
   display: block;
