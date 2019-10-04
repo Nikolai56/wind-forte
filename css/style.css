@@ -844,7 +844,6 @@ select {
 }
 
 .button {
-  width: 280px;
   height: 50px;
   border-radius: 10px;
   background-color: #FDB713;
@@ -1803,6 +1802,10 @@ select {
   color: #093999;
 }
 
+.wind_line {
+  padding-bottom: 71px;
+}
+
 .wind_line img {
   padding-top: 35px;
 }
@@ -1848,27 +1851,28 @@ select {
   padding-right: 0;
 }
 
+.wind_line ul li:first-child:before {
+  width: 60%;
+}
+
 .wind_line ul li::before {
   content: '';
   display: block;
-  width: 164px;
-  height: 5px;
+  width: 90%;
+  height: 7px;
   border-radius: 10px;
   position: absolute;
   left: 0;
   top: -11px;
   background: #093999;
-  border: 1px solid #C1C1C1;
+  border: 2px solid #C1C1C1;
+  border-style: ridge;
 }
 
 .wind_line .row {
   border: 1px solid #C1C1C1;
   border-radius: 10px;
   margin-bottom: 10px;
-}
-
-.wind_line .row:first-child {
-  margin-top: 40px;
 }
 
 .wind_line .row span {
@@ -1878,18 +1882,20 @@ select {
 .wind_line .row div:last-child {
   margin: 0 auto;
   padding-top: 42px;
-  padding-bottom: 27px;
   text-align: center;
   background-color: #efefef;
 }
 
 .wind_line .row div:last-child h2 {
-  font-size: 36px;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-.wind_line .row div:last-child h2 button {
-  width: 200px;
-  padding-bottom: 36px;
+.wind_line .row div:last-child button {
+  width: auto;
+  padding: 0 12%;
+  margin-bottom: 36px;
+  margin-top: 26px;
 }
 
 @media (max-width: 991px) {

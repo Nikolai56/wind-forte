@@ -1,4 +1,5 @@
 .wind_line
+   padding-bottom: 71px
    img
       padding-top: 35px
    h3
@@ -25,34 +26,40 @@
          &:last-child
             padding-right: 0
          position: relative
+         &:first-child
+            &:before
+               width: 60%
          &::before
             content: ''
             display: block
-            width: 164px
-            height: 5px
+            width: 90%
+
+            height: 7px
             border-radius: 10px
             position: absolute
             left: 0
             top: -11px
             background: $blue
-            border: 1px solid $border-gray
+            border: 2px solid $border-gray
+            border-style: ridge
    .row      
       border: 1px solid $border-gray
       border-radius: 10px
-      &:first-child         
-         margin-top: 40px
       margin-bottom: 10px
       span
          color: $border-gray
       div
          &:last-child
             margin: 0 auto
-            padding-top: 42px
-            padding-bottom: 27px
+            padding-top: 42px          
             text-align: center
             background-color: #efefef
             h2
-               font-size: 36px
-               button
-                  width: 200px
-                  padding-bottom: 36px
+               font-size: 1.5em
+               font-weight: bold
+            button
+               width: auto
+               padding: 0 12%
+               margin-bottom: 36px
+               margin-top: 26px
+               
