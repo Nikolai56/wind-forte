@@ -1,1 +1,26 @@
-$black: #000
+.wind_compare
+   margin: 0 auto
+   padding: 0
+   &:nth-child(1)
+      li
+         padding-top: 180px
+         padding-bottom: 28px
+         background: url(../img/Razrez2-186x300.png) center top no-repeat
+         &:first-child
+            background: none
+   &:nth-child(2), &:nth-child(4), &:nth-child(6),    &:nth-child(8)
+      li
+         background-color: #EFEFEF
+   display: flex
+   justify-content: center
+   li
+      width: 15%
+      height: 60px
+      border-right: 1px solid $white
+      display: flex
+      justify-content: center
+      align-items: center
+      &:first-child
+         justify-content: flex-start
+         width: 24%
+         padding-left: 39px
