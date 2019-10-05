@@ -2036,7 +2036,7 @@ button_mini {
 
 .wind_repairs {
   background: #093999 url(../img/repair2.png) right center/contain no-repeat;
-  background-position-x: 80%;
+  background-position-x: 90%;
   height: 300px;
   margin-top: 74px;
   margin-bottom: 65px;
@@ -2056,6 +2056,54 @@ button_mini {
   background-position-x: 25%;
   background-position-y: 40px;
   height: 100%;
+}
+
+.log_service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(../img/otd-2.png) center center/contain no-repeat;
+  z-index: -2;
+  height: 640px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.log_service li {
+  background-color: #fff;
+  padding-right: 1%;
+  max-width: 25%;
+  line-height: 23px;
+  padding-bottom: 5px;
+}
+
+.log_service li h3 {
+  font-weight: bold;
+}
+
+.log_service li:first-child {
+  padding-left: 1%;
+}
+
+.log_service li:first-child h3:first-child {
+  padding-top: 81px;
+}
+
+.log_service li img {
+  position: absolute;
+  left: 20%;
+  top: 90px;
+  z-index: -1;
+}
+
+.log_service li p {
+  padding-bottom: 41px;
+}
+
+.log_service li:first-child {
+  text-align: right;
 }
 
 @media (max-width: 991px) {
