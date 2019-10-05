@@ -2034,6 +2034,30 @@ button_mini {
   border: 1px solid #C1C1C1;
 }
 
+.wind_repairs {
+  background: #093999 url(../img/repair2.png) right center/contain no-repeat;
+  background-position-x: 80%;
+  height: 300px;
+  margin-top: 74px;
+  margin-bottom: 65px;
+}
+
+.wind_repairs h2 {
+  text-align: left;
+  color: #FFF;
+}
+
+.wind_repairs button {
+  margin-bottom: 87px;
+}
+
+.wind_repairs .container {
+  background: url(../img/svg/key.svg) center bottom no-repeat;
+  background-position-x: 25%;
+  background-position-y: 40px;
+  height: 100%;
+}
+
 @media (max-width: 991px) {
   .products img {
     width: 75%;
