@@ -3,9 +3,12 @@
    padding: 0
    &:nth-child(1)
       li
-         padding-top: 180px
+         padding-top: 160px
          padding-bottom: 28px
-         background: url(../img/Razrez2-186x300.png) center top no-repeat
+         background: url(../img/Razrez2-186x300.png) top (center/contain) no-repeat
+         background-size: 70%
+         font-weight: bold
+         text-transform: uppercase
          &:first-child
             background: none
    &:nth-child(2), &:nth-child(4), &:nth-child(6),    &:nth-child(8)
@@ -14,7 +17,7 @@
    display: flex
    justify-content: center
    li
-      width: 15%
+      width: 13%
       height: 60px
       border-right: 1px solid $white
       display: flex
@@ -22,19 +25,24 @@
       align-items: center
       &:first-child
          justify-content: flex-start
-         width: 24%
+         width: 25%
          padding-left: 39px
 
 .wind_opt
    display: flex
-   justify-content: space-between   
+   justify-content: space-between
+   button
+      width: 50%
+      min-width: 150px
    a
+      font-size: 16px
       text-decoration: underline
       text-underline-position: under
       text-decoration-style: dotted
       display: inline
       text-align: center
       border-right: 1px solid $border-gray
+      color: $blue
       &:nth-child(1)         
          background: url(../img/opt_check.png) no-repeat center top
          background-position-y: 20px
@@ -59,23 +67,21 @@
       width: 20%
    &:last-child
       display: block
-      background: url(../img/wind_opt-door_handles.png) left center no-repeat
-      background-size: contain
+      background: url(../img/wind_opt-door_handles.png) left (center/contain) no-repeat
       background-position-y: 35px
-      background-position-x: 30px    
+      background-position-x: -10%    
       padding-top: 35px
       margin-bottom: 35px
       padding-left: 30px
       li
-         background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.01))
-         background-position-x: 50%
          line-height: 23px
          display: block  
          padding: 25px 16px 0 40%
          text-align: left
          &:last-child
             padding-bottom: 0
+
 .border-wrapper
    border-radius: 10px
    border: 1px solid $border-gray
-      
+
