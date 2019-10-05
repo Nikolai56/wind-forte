@@ -1,35 +1,36 @@
 .calc
+   select
+      width: 100%
+      margin-bottom: 20px
+   button
+      width: 50%
    background-color: #EFEFEF
    padding-bottom: 70px
-   &__wrap
-      background-color: $white
-      display: flex
-      flex-direction: row
-   &__left, &__right      
+   form
       width: 50%
-      margin: 0 auto
-      padding: 5%
+   &__left, &__right    
+      width: 50%
+      padding: 3%
+      background-color: #fff
    &__left
       border-right: 4px solid #EFEFEF
       img
-         padding: 28px 15px 69px 0
-   &__right
-      line-height: 23px
+         padding: 28px 7px 69px 0
+      &_erker
+         padding: 0
+   &__checkbox
+      padding-bottom: 50px
+
    &__specs
       &-wrap
          display: flex
          flex-direction: row
          justify-content: space-between
-      &-name, &-value       
-         &:last-child
-            padding-bottom: 30px
-         li
-            height: 50px
-            display: flex
-            align-items: center
-            font-size: 17px
-            font-weight: bold            
-            margin-bottom: 20px
+         padding-bottom: 30px
+      &-name
+         line-height: 68px
+         padding-right: 2%
+
    &__checkbox
       .pretty
          &:first-child

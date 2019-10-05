@@ -25,6 +25,7 @@
 //    padding: 0
 
 @media (max-width: 991px)
+
    .products
       img
          width: 75%
@@ -48,7 +49,9 @@
          justify-content: center
       &__elem
          font-size: 1.2em
-         padding-right: 2em
+         padding-right: 3%
+         &:first-child
+            padding-left: 3%
          color: $blue
          &.active
             border: none
@@ -91,17 +94,6 @@
       &__link
          font-size: .9em
 
-   .calc
-      background-color: #EFEFEF
-      padding-bottom: 70px
-      &__wrap
-         background-color: $white
-         display: flex
-         flex-direction: row
-      &__left, &__right      
-         width: 50%
-         margin: 0 auto
-         padding: 5% 1% 5% 5%
 
 @media (max-width: 767px)
 	.menu
@@ -188,10 +180,32 @@
             display: none
 
    .calc
-      &__wrap      
-         flex-direction: column
-      &__left, &__right
-         width: auto
-         margin: 0 auto
+      button
+         min-width: 180px
       &__left
-         border: 0
+         border-right: 0
+         border-bottom: 4px solid $EFEFEF
+      &__left, &__right      
+         min-width: 100%
+         padding: 10%
+      padding-bottom: 30px
+
+@media (max-width: 575px)
+   .heading
+      font-size: 22px
+      line-height: 26px
+      padding-top: 32px
+      padding-bottom: 20px
+
+   .projects
+      &__list-item
+         &:first-child
+            padding: 0
+         &:last-child
+            border-radius: 10px
+
+   .calc, .bg-grey
+      background-color: $white
+   
+
+      

@@ -166,7 +166,8 @@
                 
                         <ul class="projects__works">                
                             
-                            <li class="projects__list-item">                            <p class="heading heading_works">Выполненные&nbsp;работы</p></li>
+                            <li class="projects__list-item">
+                                <h2 class="heading_md-blue">Выполненные&nbsp;работы</h2></li>
                             <li class="projects__list-item">Демонтаж старых окон</li>
                             <li class="projects__list-item">Установка пластиковых окон Forte 58, 3 камеры, ширина 58</li>
                             <li class="projects__list-item">Установка подоконников</li>
@@ -192,17 +193,19 @@
     </div>
 </section>
 
-<!-- COSTS -->
+<!-- CALC -->
+
 <section class="calc">
     <div class="container">
-        <p class="heading">Узнайте стоимость работ</p>
+        <h2 class="heading bg-grey">Узнайте стоимость работ</h2>
 
-        <div class="calc__wrap">
+        <div class="row">
+
 
             <div class="calc__left">
 
-                <p class="heading heading_blue-md">Выберите тип продукции</p>
-    
+                <h3 class="heading_md-blue">Выберите тип продукции</h3>
+
                 <form class="form" action="">
                     <select name="Тип продукции" id="">
                         <option value="Окна">Окна</option>
@@ -216,85 +219,74 @@
                 <img src="img/wind-sm-1.png">
                 <img src="img/wind-sm-2.png">
                 <img src="img/wind-sm-3.png">
-                <img src="img/wind-sm-4.png">
+                <img class="calc__left_erker" src="img/wind-sm-4.png">
                 
-                <p class="heading heading_blue-md">Характеристики</p>
+                <p class="heading_md-blue">Характеристики</p>
 
                 <div class="calc__specs-wrap">
+                    <div class="calc__specs-name">
+                        Тип профиля<br>
+                        Ширина&nbsp;подоконника<br>
+                        Ширина&nbsp;отлива
+                    </div>
 
-                    <ul class="calc__specs-name">
-                        <li>Тип профиля</li>
-                        <li>Ширина<br>подоконника</li>
-                        <li>Ширина отлива</li>
-                    </ul>
-
-                    <ul class="calc__specs-value">
-
-                        <li><form action="">
-                            <select size="1">
-                                <option value="Forte_58">Forte 58</option><option value="Forte_70">Forte 70</option><option value="Ivaper_62">Ivaper 62</option><option value="Ivaper_70">Ivaper 70</option><option value="Ivaper_74">Ivaper 74</option>
-                            </select>
-                        </form></li>
-
-                        <li><form action="">
-                            <select size="1">
-                                <option value="none">Нет</option><option value="w150">150мм</option><option value="w200">200мм</option><option value="w250">250мм</option><option value="w300">300мм</option><option value="w350">350мм</option><option value="w400">400мм</option><option value="w450">450мм</option><option value="w500">500мм</option><option value="w550">550мм</option><option value="w600">600мм</option>
-                            </select>
-                        </form></li>
-
-                        <li><form action="">
-                            <select size="1">
-                                <option value="none">Нет</option><option value="w0_100">менее 100мм</option><option value="w100_150">100-150мм</option><option value="w150_200">150-200мм</option><option value="w200_250">200-250мм</option><option value="w250_400">250-400мм</option>
-                            </select>
-                        </form></li>
-                    </ul>
+                    <form class="calc__specs-value" action="">
+                        <select size="1">
+                            <option value="Forte_58">Forte 58</option><option value="Forte_70">Forte 70</option><option value="Ivaper_62">Ivaper 62</option><option value="Ivaper_70">Ivaper 70</option><option value="Ivaper_74">Ivaper 74</option>
+                        </select>
+                        <select size="1">
+                            <option value="none">Нет</option><option value="w150">150мм</option><option value="w200">200мм</option><option value="w250">250мм</option><option value="w300">300мм</option><option value="w350">350мм</option><option value="w400">400мм</option><option value="w450">450мм</option><option value="w500">500мм</option><option value="w550">550мм</option><option value="w600">600мм</option>
+                        </select>
+                        <select size="1">
+                            <option value="none">Нет</option><option value="w0_100">менее 100мм</option><option value="w100_150">100-150мм</option><option value="w150_200">150-200мм</option><option value="w200_250">200-250мм</option><option value="w250_400">250-400мм</option>
+                        </select>
+                    </form>
                 </div>                
                 
                 <div class="calc__checkbox">
-                        <div class="pretty p-default p-curve">
-                            <input type="checkbox" />
-                            <div class="state p-warning">
-                                <label>Монтаж</label>
-                            </div>
-                        </div>
-                        <div class="pretty p-default p-curve">
-                            <input type="checkbox" />
-                            <div class="state p-warning">
-                                <label>Отделка откоса</label>
-                            </div>
-                        </div>
 
+                    <div class="pretty p-default p-curve">
+                        <input type="checkbox" />
+                        <div class="state p-warning">
+                            <label>Монтаж</label>
+                        </div>
+                    </div>
+
+                    <div class="pretty p-default p-curve">
+                        <input type="checkbox" />
+                        <div class="state p-warning">
+                            <label>Отделка откоса</label>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
-    
-            <div class="calc__right">
-                <p class="heading heading_blue-md">Задайте параметры</p>
-                <p>Нажмите на створку для выбора типа открывания</p>
 
+            <div class="calc__right">
+                <h3 class="heading_md-blue">Задайте параметры</h3>
+                Нажмите на створку для выбора типа открывания
 
                 <div class="calc__wind-wrap">
+
                     <div class="calc__wind-elem">
                         <img src="img/windows-sharper.png"><span>Поворотная<br>вправо</span><p>Поворотно-<br>откидная левая</p>
-                        <div class="calc__wind-wrap">
-                            <form action="">
-                                <input class="calc__wind-width" type="text" placeholder="1500" />
-                            </form>                
-                        </div>
-                        <div class="calc__wind-height_wrap">
-                            <form action=""><input class="calc__wind-height" type="text" placeholder="1500"></form>                        
-                        </div>
+                        <form class="calc__wind-wrap" action="">
+                            <input class="calc__wind-width" type="text" placeholder="1500" />                
+                        </form>
+                        <form class="calc__wind-height_wrap" action="">
+                            <input class="calc__wind-height" type="text" placeholder="1500" />
+                        </form>
                     </div>
+
                 </div>
                 <div class="calc__wind-wrap">
                     <button class="button">Добавить в заказ</button>
                 </div>
             </div>
-        </div>
 
-    </div>
 </section>
+
 
 
 <!-- FACTS -->
@@ -338,7 +330,7 @@
                 <img src="img/facts_100-medal.png" alt="">
                 Наша компания дважды признана лучшим предприятием стройиндустрии
             </div>  
-  
+
         </div>
 
         <p class="heading_facts">Компания Forte является одним изведущих партнеров  строительных компаний г. Санкт-Петербурга</p>
@@ -371,8 +363,8 @@
         </ul>
 
     </div>
-        
 </section>
+
 
 <section class="call-measure">
     <div class="container">
@@ -395,7 +387,6 @@
                 <a class="call-measure__policy-link">Политики конфиденциальности</a>
             </p>
         </div>
-
 
     </div>
 </section>
@@ -482,7 +473,7 @@
 
             <h4><a href="tel:+78124456724">+7 (812) 445-67-24</a></h4>
 
-            <h4><a href="mailto:sales@okna-forte.ru">sales@okna-forte.ru</a></p></h4>
+            <h4><a href="mailto:sales@okna-forte.ru">sales@okna-forte.ru</a></ажмите></h4>
 
         </div>
         
