@@ -849,7 +849,6 @@ select {
 
 button {
   height: 50px;
-  width: 280px;
   border-radius: 10px;
   background-color: #FDB713;
   border: none;
@@ -941,6 +940,7 @@ button_mini {
   text-transform: uppercase;
   font-weight: bold;
   max-width: 90%;
+  margin: 0 auto;
 }
 
 .heading_md-blue {
@@ -1796,6 +1796,10 @@ button_mini {
   padding-bottom: 71px;
 }
 
+.wind_line br {
+  display: none;
+}
+
 .wind_line img {
   padding-top: 35px;
 }
@@ -1893,8 +1897,7 @@ button_mini {
 }
 
 .wind_compare {
-  margin: 0 auto;
-  padding: 0;
+  min-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1903,8 +1906,20 @@ button_mini {
           justify-content: center;
 }
 
+.wind_compare br {
+  display: none;
+}
+
+.wind_compare .container {
+  margin: 0;
+}
+
+.wind_compare:nth-child(2) li, .wind_compare:nth-child(4) li, .wind_compare:nth-child(6) li, .wind_compare:nth-child(8) li {
+  background-color: #EFEFEF;
+}
+
 .wind_compare:nth-child(1) li {
-  padding-top: 160px;
+  padding-top: 18%;
   padding-bottom: 28px;
   background: url(../img/Razrez2-186x300.png) top center/contain no-repeat;
   background-size: 70%;
@@ -1916,11 +1931,37 @@ button_mini {
   background: none;
 }
 
-.wind_compare:nth-child(2) li, .wind_compare:nth-child(4) li, .wind_compare:nth-child(6) li, .wind_compare:nth-child(8) li {
-  background-color: #EFEFEF;
+.wind_compare:nth-child(2) li:first-child {
+  background: #EFEFEF url(../img/table-sun.png) no-repeat 5px 50%;
+}
+
+.wind_compare:nth-child(3) li:first-child {
+  background: url(../img/table-thermometer.png) no-repeat 5px 50%;
+}
+
+.wind_compare:nth-child(4) li:first-child {
+  background: #EFEFEF url(../img/table-volume.png) no-repeat 5px 50%;
+}
+
+.wind_compare:nth-child(5) li:first-child {
+  background: url(../img/table-camera.png) no-repeat 5px 50%;
+}
+
+.wind_compare:nth-child(6) li:first-child {
+  background: #EFEFEF url(../img/svg/table-profile.svg) no-repeat 5px 50%;
+}
+
+.wind_compare:nth-child(7) li:first-child {
+  background: url(../img/svg/table-profile.svg) no-repeat 5px 50%;
+}
+
+.wind_compare:nth-child(8) li:first-child {
+  background: #EFEFEF url(../img/svg/table-furniture.svg) no-repeat 5px 50%;
 }
 
 .wind_compare li {
+  font-size: 0.9em;
+  font-weight: normal;
   width: 13%;
   height: 60px;
   border-right: 1px solid #FFF;
@@ -1939,8 +1980,9 @@ button_mini {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 25%;
-  padding-left: 39px;
+  width: 30%;
+  padding-left: 30px;
+  font-weight: bold;
 }
 
 .wind_opt {
@@ -2021,18 +2063,16 @@ button_mini {
 }
 
 .wind_opt:last-child li:nth-child(3), .wind_opt:last-child li:nth-child(4), .wind_opt:last-child li:nth-child(5) {
-  background: url(../img/opt_checkbox-icon.png) no-repeat center bottom;
+  background: url(../img/opt_checkbox-icon.png) no-repeat center center;
   background-position-x: 41%;
+  background-position-y: 100%;
   padding-left: 43.5%;
-}
-
-.wind_opt:last-child li:last-child {
-  padding-bottom: 0;
 }
 
 .border-wrapper {
   border-radius: 10px;
   border: 1px solid #C1C1C1;
+  margin: 0 5%;
 }
 
 .wind_repairs {
@@ -2261,7 +2301,7 @@ button_mini {
     display: none;
   }
   .wind_opt:last-child {
-    background-position-x: -60%;
+    background-position-x: -100px;
   }
   .wind_opt:last-child li:nth-child(3), .wind_opt:last-child li:nth-child(4), .wind_opt:last-child li:nth-child(5) {
     padding-left: 45%;
@@ -2404,11 +2444,17 @@ button_mini {
     min-width: 100%;
     padding: 10%;
   }
+  .wind_line h3 {
+    font-size: 1em;
+  }
+  .wind_line .row div:last-child h2 {
+    font-size: 1em;
+  }
   .wind_opt a {
     font-size: 0.85em;
   }
   .wind_opt:last-child {
-    background-position-x: -400%;
+    background-position-x: -180px;
   }
   .wind_opt:last-child li:nth-child(3), .wind_opt:last-child li:nth-child(4), .wind_opt:last-child li:nth-child(5) {
     padding-left: 48%;
@@ -2461,6 +2507,15 @@ button_mini {
   .wind_opt:last-child li:nth-child(3), .wind_opt:last-child li:nth-child(4), .wind_opt:last-child li:nth-child(5) {
     padding-left: 12%;
     background-position-x: 4%;
+  }
+  .wind_compare br, .wind_line br {
+    display: inline;
+  }
+  .wind_line {
+    font-size: 0.9em;
+  }
+  .wind_line button {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */

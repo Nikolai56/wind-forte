@@ -1,9 +1,15 @@
 .wind_compare
-   margin: 0 auto
-   padding: 0
+   br
+      display: none
+   min-width: 100%
+   .container
+      margin: 0
+   &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8)
+      li
+         background-color: #EFEFEF    
    &:nth-child(1)
       li
-         padding-top: 160px
+         padding-top: 18%
          padding-bottom: 28px
          background: url(../img/Razrez2-186x300.png) top (center/contain) no-repeat
          background-size: 70%
@@ -11,12 +17,39 @@
          text-transform: uppercase
          &:first-child
             background: none
-   &:nth-child(2), &:nth-child(4), &:nth-child(6),    &:nth-child(8)
+       
+   &:nth-child(2)
       li
-         background-color: #EFEFEF
+         &:first-child
+            background: #EFEFEF url(../img/table-sun.png) no-repeat 5px 50%
+   &:nth-child(3)
+      li
+         &:first-child
+            background: url(../img/table-thermometer.png) no-repeat 5px 50%
+   &:nth-child(4)
+      li
+         &:first-child
+            background: #EFEFEF url(../img/table-volume.png) no-repeat 5px 50%
+   &:nth-child(5)
+      li
+         &:first-child
+            background: url(../img/table-camera.png) no-repeat 5px 50%
+   &:nth-child(6)
+      li
+         &:first-child
+            background: #EFEFEF url(../img/svg/table-profile.svg) no-repeat 5px 50%
+   &:nth-child(7)
+      li
+         &:first-child
+            background: url(../img/svg/table-profile.svg) no-repeat 5px 50%
+   &:nth-child(8)
+      li:first-child
+         background: #EFEFEF url(../img/svg/table-furniture.svg) no-repeat 5px 50%
    display: flex
    justify-content: center
    li
+      font-size: 0.9em
+      font-weight: normal
       width: 13%
       height: 60px
       border-right: 1px solid $white
@@ -25,8 +58,9 @@
       align-items: center
       &:first-child
          justify-content: flex-start
-         width: 25%
-         padding-left: 39px
+         width: 30%
+         padding-left: 30px
+         font-weight: bold         
 
 .wind_opt
    display: flex
@@ -79,16 +113,15 @@
          padding: 25px 16px 0 40%
          text-align: left
          &:nth-child(3), &:nth-child(4), &:nth-child(5)
-            background: url(../img/opt_checkbox-icon.png) no-repeat center bottom 
+            background: url(../img/opt_checkbox-icon.png) no-repeat center center 
             background-position-x: 41%
+            background-position-y: 100%
             padding-left: 43.5% 
          
 
-         
-         &:last-child
-            padding-bottom: 0
 
 .border-wrapper
    border-radius: 10px
    border: 1px solid $border-gray
+   margin: 0 5%
 
