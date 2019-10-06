@@ -953,7 +953,8 @@ button_mini {
   line-height: 24px;
   text-align: left;
   color: #093999;
-  padding: 0 0 26px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .products__wrap {
@@ -2077,7 +2078,7 @@ button_mini {
 .border-wrapper {
   border-radius: 10px;
   border: 1px solid #C1C1C1;
-  margin: 0 15px;
+  margin: 0 auto;
   max-width: 1155px;
 }
 
@@ -2108,6 +2109,8 @@ button_mini {
 }
 
 .log_service {
+  max-width: 1440px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2141,7 +2144,7 @@ button_mini {
 }
 
 .log_service li:first-child {
-  padding-left: 1.5%;
+  padding-left: 15px;
   text-align: right;
 }
 
@@ -2158,7 +2161,7 @@ button_mini {
 }
 
 .log_service li:last-child {
-  padding-right: 1.5%;
+  padding-right: 15px;
 }
 
 .log_service li:last-child div {
@@ -2167,6 +2170,12 @@ button_mini {
 
 .log_service li:last-child h3:after {
   left: -205px;
+}
+
+@media (max-width: 1199px) {
+  .border-wrapper {
+    margin: 0 15px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2202,12 +2211,9 @@ button_mini {
             justify-content: center;
   }
   .projects__elem {
-    font-size: 1.2em;
-    padding-right: 3%;
+    font-size: 1.1em;
+    padding-right: 5%;
     color: #093999;
-  }
-  .projects__elem:first-child {
-    padding-left: 3%;
   }
   .projects__elem.active {
     border: none;
@@ -2229,9 +2235,6 @@ button_mini {
   .projects__slider {
     max-width: 550px;
     width: auto;
-  }
-  .heading_works {
-    font-size: 1.5em;
   }
   .header {
     background: none;
