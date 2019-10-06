@@ -249,7 +249,11 @@
          background-position-x: -180px
          li
             &:nth-child(3), &:nth-child(4), &:nth-child(5)
-               padding-left: 48% 
+               padding-left: 48%
+   
+   .wrap
+      padding: 0
+      margin: 0
 
 // 575
 @media (max-width: 575px)
@@ -276,16 +280,17 @@
          display: block
          min-width: 100%
          &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
-            background-position-y: 0px
-            background-position-x: 3%    
+            background-position-y: 30%
+            background-position-x: 4%   
             border-right: 0
-         padding-top: 5%
-         padding-bottom: 5%
+            background-size: 70px            
+         padding-top: 2%
+         padding-bottom: 2%
          text-align: left
-         padding-left: 25%
+         padding-left: 18%
          br
             display: none
-         font-size: 1.2em         
+         font-size: 1.1em         
       &:last-child
          background: none
          li
