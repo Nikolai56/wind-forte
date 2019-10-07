@@ -83,24 +83,22 @@
          min-width: 30%
          min-height: 182px         
 
-   &__partners      
-      margin: 33px 0 61px
+   &__partners 
+      margin: 33px auto 61px
+
       display: flex
-      justify-content: space-around
+      justify-content: center
       align-items: center
+      flex-wrap: wrap
       border: 1px solid $border-gray
       border-radius: 10px
       padding: 10px
-      li
-         position: relative
-         margin: 0 10px         
-         span
-            position: absolute
-            bottom: 5%
-            left: 30%
-            color: $white
-            font-size: 20px
-            line-height: 24px
+      div
+         padding: 0
+         margin: 0
+         img
+            margin: 0 3px 3px
+            display: inline
 
    &__gallery      
       margin: 46px 0 0
@@ -109,7 +107,8 @@
       li
          border-radius: 10px
          position: relative
-         margin: 0 10px
+         &:first-child
+            margin-right: 20px
          width: 580px
          height: 280px          
          span
@@ -143,6 +142,7 @@
          width: auto
       br
          display: inline
+
 @media (max-width: 767px)
    .facts      
       &__gallery
@@ -154,6 +154,10 @@
          li
             margin: 0 0 20px  
             width: auto
+      &__gallery      
+         li
+            &:first-child
+               margin-right: 0
 
 @media (max-width: 575px)
    .facts 
