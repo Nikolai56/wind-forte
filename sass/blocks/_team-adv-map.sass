@@ -40,40 +40,49 @@
          font-weight: 0.8em
          padding-top: 11px
 .map
-   background: url(../img/map-2.png) center (center/cover) no-repeat
-
+   margin: 0
+   padding: 0
+   position: relative
    &__form
-      width: 380px
+      position: absolute
+      z-index: 1
+      width: 400px
+      margin-top: 50px
+      margin-left: 130px
       height: 450px
       background-color: $blue
       color: $white
       padding-top: 30px
-      padding-left: 122px
-      p
-         font-size: 15px
-         padding-top: 6px
-      h4
-         position: relative
-         padding-top: 38px
-         padding-bottom: 6px
-         font-size: 17px
-         color: $yellow
-         &:nth-child(1), &::before
-            content: '' 
-            background-color: $yellow             
-            background-image: url(../img/map-loc.png) center center no-repeat
-            position: absolute
-            left: 0
-            top: 0
-            display: block
-            height: 2px
-            width: 30px
-            
-            border: 20px solid $yellow
-            
+      border-radius: 20px
+      
       h3
          font-size: 18px
          text-transform: uppercase
+         padding-top: 30px
+         padding-bottom: 18px
+         padding-left: 122px
+      p
+         font-size: 15px
+         padding-top: 6px
+         color: $white     
+
       a
          color: $yellow
+         display: block  
+         padding-left: 122px
+         padding-top: 20px
+         padding-bottom: 20px
+         height: 60px
+         margin-bottom: 30px
+         background: url(../img/map-icons.png) left center no-repeat
+         &:nth-child(2)
+            background-position: 30px -25px
+         &:nth-child(3)
+            background-position: 30px -197px
 
+         &:nth-child(4)
+            background-position: 30px -115px
+         &:nth-child(5)
+            background-position: 30px -280px
+   &__map
+      position: relative
