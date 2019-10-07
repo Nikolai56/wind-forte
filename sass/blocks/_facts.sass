@@ -28,33 +28,54 @@
 
    &__numbers
       padding-bottom: 67px
-      .col-4
-         min-width: 400ppx
-         position: relative
-         &:first-child
+      .col-md-4
+         
+         &:nth-child(1)
+            text-align: center
             p
-               left: 55%
-         &:last-child
+               left: 85px
+            img
+               left: 115px
+               top: 2px
+
+         &:nth-child(2)
+            text-align: center
+            padding-right: 100px
             p
-               left: 65%
+               left: 30px
+            img
+               left: 30px
+               top: -40px
+         &:nth-child(3)
+            text-align: left
+            p
+               left: 140px
+            img
+               left: 31px
+               top: -60px
       span
          font-weight: normal
          font-size: 100px
          line-height: 120px
          text-align: left
          color: $blue
+         position: relative       
       p
          font-weight: normal
          font-size: 16px
          line-height: 19px
          position: absolute
-         left: 50%
-         top: 50%
-         max-width: 300px  
+         left: 85px
+         bottom: -10px
+         width: 200px
          height: 57px
          text-align: left
          background: $white
          padding: 2%
+      img
+         position: absolute
+            left: 100px
+            top: 0px
 
    &__medals
       margin: 86px 0 65px
@@ -94,17 +115,13 @@
                   min-height: 128px
    &__partners 
       margin: 33px auto 61px
-
       display: flex
-      justify-content: center
-      align-items: center
       flex-wrap: wrap
+      justify-content: center
       border: 1px solid $border-gray
       border-radius: 10px
       padding: 10px
       div
-         padding: 0
-         margin: 0
          img
             margin: 0 3px 3px
             display: inline
