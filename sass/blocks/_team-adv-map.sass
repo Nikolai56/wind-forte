@@ -1,38 +1,57 @@
 .team
+   font-weight: bold
+   color: $blue
+   position: relative
    padding-bottom: 58px
-   div  
+   line-height: 24px
+   img
       border-radius: 50%
-      background: url(../img/team-1.jpg) center center no-repeat
-      background-size: 100%      
-      padding-top: 300px    
-      text-align: center
+      &:first-child         
+         width: 280px
+   div           
+      text-align: center            
+      img
+         &:nth-child(2)
+            position: absolute
+            left: 5%
+            bottom: 25%
+            width: 25%    
       h3
-         font-weight: bold
-      h4
-         padding-top: 4px
-         font-weight: 0.8em
-         font-weight: bold
-         color: $blue
+         padding-top: 50px
+         font-size: 20px
+         color: $black
+
+@media (max-width: 767px)
+   .team
+      div                  
+         img
+            &:nth-child(2)
+               width: 35%
+               left: 0
+               bottom: 45%   
 
 .adv
+   padding: 0 5%
+   margin: 0 auto
    a      
       width: 200px
       height: 250px
-      padding-top: 160px
+      padding-top: 100px
+      padding-bottom: 180px
       text-align: center
       color: $black
       &:nth-child(1)
-         background: url(../img/advant-1.png) center center no-repeat
+         background: url(../img/advant-1.png) top center no-repeat
       &:nth-child(2)
-         background: url(../img/advant-2.png) center center no-repeat
+         background: url(../img/advant-2.png) top center no-repeat
       &:nth-child(3)
-         background: url(../img/advant-3.png) center center no-repeat
+         background: url(../img/advant-3.png) top center no-repeat
       &:nth-child(4)
-         background: url(../img/advant-4.png) center center no-repeat
+         background: url(../img/advant-4.png) top center no-repeat
       &:nth-child(5)
-         background: url(../img/advant-5.png) center center no-repeat
+         background: url(../img/advant-5.png) top center no-repeat
       &:nth-child(6)
-         background: url(../img/advant-6.png) center center no-repeat
+         background: url(../img/advant-6.png) top center no-repeat
       h4      
          font-weight: 1em
          font-weight: bold
@@ -46,13 +65,13 @@
    &__form
       position: absolute
       z-index: 1
-      width: 400px
+      width: 370px
       margin-top: 50px
       margin-left: 130px
       height: 450px
       background-color: $blue
       color: $white
-      padding-top: 30px
+      padding: 1% 0
       border-radius: 20px
       
       h3
