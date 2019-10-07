@@ -59,30 +59,39 @@
    &__medals
       margin: 86px 0 65px
       display: flex
-      justify-content: center
-
-      &-ntv
-         background: url(../img/facts_ntv.png) center top no-repeat
-         padding: 10%
-        
-      &-box
-         position: relative
+      justify-content: center        
+      &-box       
          border: 1px solid $border-gray
          border-radius: 10px
-         img
-            position: absolute
-            top: -20%
-            right: 135px
-         &:last-child
+         display: flex
+         align-items: center
+         
+         div
+            position: relative
+            width: 50%            
             img
-               left: 100px
-         min-width: 400px
-         max-width: 400px
-         padding: 100px 3% 2%         
-         margin: 0 1%
-         min-width: 30%
-         min-height: 182px         
+               position: absolute
+               top: -140px
+               right: -64px
+               mind-width: 120px
+               min-height: 128px
 
+            h3
+               position: absolute
+               top: 0px
+               width: 200px
+               left: -100px                    
+        
+         min-width: 49%
+         min-height: 220px
+         margin-right: 2%
+         &:last-child
+            margin-right: 0
+            div    
+               img
+                  right: -87px
+                  min-width: 173px
+                  min-height: 128px
    &__partners 
       margin: 33px auto 61px
 
