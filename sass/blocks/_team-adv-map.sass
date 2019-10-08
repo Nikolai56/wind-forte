@@ -32,12 +32,12 @@
 
 .adv
    padding: 0 5%
-   margin: 0 auto
+
    a      
-      width: 200px
-      height: 250px
+      &:hover
+         cursor: pointer
       padding-top: 100px
-      padding-bottom: 180px
+
       text-align: center
       color: $black
       &:nth-child(1)
@@ -65,9 +65,9 @@
    &__form
       position: absolute
       z-index: 1
-      width: 370px
+      width: 340px
       margin-top: 50px
-      margin-left: 130px
+      margin-left: 5%
       height: 450px
       background-color: $blue
       color: $white
@@ -88,20 +88,17 @@
       a
          color: $yellow
          display: block  
-         padding-left: 122px
+         padding-left: 100px
          padding-top: 20px
          padding-bottom: 20px
          height: 60px
          margin-bottom: 30px
          background: url(../img/map-icons.png) left center no-repeat
          &:nth-child(2)
-            background-position: 30px -25px
+            background-position: 20px -25px
          &:nth-child(3)
-            background-position: 30px -197px
-
+            background-position: 20px -197px
          &:nth-child(4)
-            background-position: 30px -115px
+            background-position: 20px -115px
          &:nth-child(5)
-            background-position: 30px -280px
-   &__map
-      position: relative
+            background-position: 20px -280px
