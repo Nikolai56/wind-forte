@@ -1,7 +1,8 @@
 .wind_line
+   padding-bottom: 71px
    br
       display: none
-   padding-bottom: 71px
+
    img
       padding-top: 35px
    h3
@@ -9,7 +10,6 @@
       text-transform: uppercase
       padding-top: 44px
       padding-bottom: 36px
-      font-size: 26px
    p
       text-align: center
       max-width: 80%
@@ -22,29 +22,31 @@
       display: flex
       flex-direction: row
       justify-content: space-between
-      li         
-         padding-right: 21px
-         &:last-child
-            padding-right: 0
-         position: relative
-         &:first-child
-            &:before
-               width: 60%
-         &:last-child
-            &:before
-               width: 15%
-         &::before
-            content: ''
-            display: block
-            width: 90%
-            height: 7px
-            border-radius: 10px
-            position: absolute
-            left: 0
-            top: -11px
-            background: $blue
-            border: 2px solid $border-gray
-            border-style: ridge
+   li
+      width: 33.33%
+      text-align: center        
+      padding-right: 21px
+      &:last-child
+         padding-right: 0
+      position: relative
+      &:first-child
+         &:before
+            width: 60%
+      &:last-child
+         &:before
+            width: 15%
+      &::before
+         content: ''
+         display: block
+         width: 90%
+         height: 7px
+         border-radius: 10px
+         position: absolute
+         left: 0
+         top: -11px
+         background: $blue
+         border: 2px solid $border-gray
+         border-style: ridge
    .row      
       border: 1px solid $border-gray
       border-radius: 10px
@@ -52,17 +54,44 @@
       span
          color: $border-gray
       div
+         font-size: 1em
          &:last-child
+            font-size: 1.4em
+            font-weight: bold
             margin: 0 auto
             padding-top: 42px          
             text-align: center
             background-color: #efefef
-            h2
-               font-size: 1.5em
-               font-weight: bold
             button
                width: auto
                padding: 0 12%
                margin-bottom: 36px
                margin-top: 26px
                
+@media (max-width: 575px)
+   .wind_line
+      img
+         padding-top: 0
+      min-width: 100%
+      h3
+         padding-top: 5px
+         padding-bottom: 25px
+      li
+         margin: 1% 1%
+
+      .row
+         min-width: 100%
+         div        
+            &:last-child
+               display: flex
+               align-items: center
+               justify-content: space-around
+               text-align: center
+               padding: 0
+               h2
+                  width: 100%
+               button
+                  margin: 10px
+                  
+      .col-0
+         display: none
