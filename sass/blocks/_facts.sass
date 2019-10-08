@@ -1,4 +1,6 @@
 .facts
+   h3
+      max-width: 90%
    br
       display: none
    line-height: 23px
@@ -78,7 +80,7 @@
             top: 0px
 
    &__medals
-      margin: 86px 0 65px
+      margin: 80px 0 50px
       display: flex
       justify-content: center        
       &-box       
@@ -86,25 +88,22 @@
          border-radius: 10px
          display: flex
          align-items: center
-         
          div
             position: relative
             width: 50%            
             img
                position: absolute
-               top: -140px
+               top: -130px
                right: -64px
                mind-width: 120px
                min-height: 128px
-
             h3
                position: absolute
-               top: 0px
-               width: 200px
-               left: -100px                    
-        
+               top: 0
+               min-width: 240px
+               left: -120px
          min-width: 49%
-         min-height: 220px
+         min-height: 150px
          margin-right: 2%
          &:last-child
             margin-right: 0
@@ -188,6 +187,16 @@
 
 @media (max-width: 575px)
    .facts
+      &__medals
+         margin: 20px 0 50px
+         display: flex
+         flex-direction: column
+         &-box
+            min-width: 100%
+            margin: 70px 0 0 0
+      &__partners
+         img
+            width: 46%
       &__counter
          width: auto
          input
