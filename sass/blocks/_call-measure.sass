@@ -1,6 +1,7 @@
 .call-measure
+   span
+      display: none
    position: absolute
-   margin-top: 70px
    margin-bottom: 30px
    top: -4px
    color: $white
@@ -49,3 +50,20 @@
          font-size: 0.8em
          padding: 0
          text-align: center
+
+@media (max-width: 575px)
+   .call-measure
+      margin-top: 38px
+      margin-bottom: 34px
+      background: none
+      h2, p, input, a
+         display: none
+
+      form
+         min-width: 100%
+      button
+         min-width: 100%
+         display: flex
+         justify-content: center
+      span
+         display: inherit
