@@ -1,21 +1,36 @@
 .team
    font-weight: bold
    color: $blue
-   position: relative
+
    padding-bottom: 58px
-   line-height: 24px
+   display: flex
+   justify-content: center
+
    img
       border-radius: 50%
       &:first-child         
          width: 280px
-   div           
-      text-align: center            
+   div
+      position: relative
+      margin: 0 auto          
+      text-align: center  
+      width: 280px
+      height: 280px
+      background-color: red
+      margin: 0 1%   
       img
+         &:nth-child(1)
+            position: absolute
+            left: 0
+            top: 0
+            
          &:nth-child(2)
             position: absolute
-            left: 5%
-            bottom: 25%
-            width: 25%    
+            left: 0
+            top: 60%
+            min-width: 50px
+            min-height: 50px
+                
       h3
          padding-top: 50px
          font-size: 20px
@@ -26,7 +41,7 @@
       div                  
          img
             &:nth-child(2)
-               width: 35%
+               width: 50px
                left: 0
                bottom: 45%   
 
@@ -101,3 +116,42 @@
             background-position: 20px -115px
          &:nth-child(5)
             background-position: 20px -280px
+
+@media (max-width: 575px)
+
+   .team
+      div
+         &:nth-child(2), &:nth-child(3)
+            display: none                  
+         img
+            &:nth-child(2)
+               width: 50px
+               left: 25%
+               bottom: 27.5%   
+   .adv
+      padding-bottom: 26px
+      a
+         max-width: 95%
+         margin: 0 auto
+      img
+         width: 101px
+         height: 69px
+
+   .map
+      display: flex
+      flex-wrap: wrap
+      background-color: $blue
+      &__form
+         position: relative
+         max-width: 80%
+         padding: 0
+         margin: 0 auto
+         border-radius: 0
+         height: auto
+         a
+            margin-bottom: 15px
+            font-size: 0.9em
+         h3
+            padding-bottom: 0px
+      iframe
+         height: 257px
