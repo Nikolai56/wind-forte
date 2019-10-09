@@ -1,6 +1,6 @@
 .promo
-   min-height: 550px
-   background: url("../img/banner.jpg") top (center/cover) no-repeat
+
+   background: url("../img/banner.jpg") center (center/cover) no-repeat
    background-color: #efefef
    &__wrap
       display: flex
@@ -8,11 +8,13 @@
    &__left
       width: 100%
       position: relative
-      min-height: 550px
+      padding-left: 5px
       display: block
    &__protect
       display: block
-      padding-top: 103px
+      padding-top: 120px
+      padding-left: 23px
+      padding-right: 10px
       color: $blue
       font-weight: bold
       font-size: 48px
@@ -21,9 +23,11 @@
    &__misc
       display: block
       font-size: 20px
-      padding-top: 23px
-      img
-         padding-right: 11px
+      margin-top: 23px
+      padding-left: 46px
+      text-align: left
+      background: url(../img/promo__left-misc_arr.png) left top no-repeat
+      background-position-x: 22px
    &__link
       font-weight: bold
       font-size: 17px
@@ -33,7 +37,8 @@
       &:hover
          color: #093999
    &__card
-      margin-top: 36px      
+      margin-top: 36px
+      margin-bottom: 36px
       max-width: 380px
       height: 477px
       padding: 30px 50px
@@ -65,46 +70,46 @@
 @media (max-width: 991px)
 
    .promo
-
-      // &__protect
-      //    font-size: 1.5em
-      //    line-height: 1.2em
-      //    padding-top: 36px
-      //    padding-bottom: 0
-      // &__misc
-      //    font-size: 0.5em
-      //    line-height: .5em
-      //    padding-top: 0
-      &__card
-         margin-top: 36px      
-         max-width: 380px
-         height: 477px
-         padding: 3% 5%
-         border-radius: 15px
-         color: $white
-         background-color: $blue
-         text-align: center
+      &__card  
+         padding: 4% 4%
          button
             width: 100%
          input
             max-width: 100%
             min-width: 100px
-         width: 50%
+         width: 45%
 
 
 @media (max-width: 575px)
 
 
    .promo
+      height: auto
       background: #EFEFEF url("../img/banner.jpg") center (center/cover) no-repeat
-      background-size: 400%
+      background-position-x: -60px
       &__wrap
          flex-direction: column
-         align-items: center
+         justify-content: flex-end
       &__card
          p, input, &-policy
             display: none
          min-width: 100%
          height: auto
+         border-radius: 0
+         margin: 0
       &__left
-         height: auto
+         min-height: 204px
+      
+      &__protect
+         font-size: 1.5em
+         line-height: 1.2em
+         padding-top: 36px
+         padding-bottom: 0
+      &__misc
+         font-size: 0.3em
+         line-height: .5em
+         padding-top: 0
+      .arrows
+         display: none
+      .wrap
+         padding: 0
