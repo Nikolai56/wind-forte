@@ -30,10 +30,14 @@
 
    &__numbers
       padding-bottom: 67px
-      .col-md-4
+      display: flex
+      &-item
+         position: relative
+         width: 33.333333%
+         height: 110px
          
          &:nth-child(1)
-            text-align: center
+            text-align: left
             p
                left: 85px
             img
@@ -41,13 +45,14 @@
                top: 2px
 
          &:nth-child(2)
-            text-align: center
+            text-align: left
             padding-right: 100px
             p
                left: 30px
             img
                left: 30px
                top: -40px
+
          &:nth-child(3)
             text-align: left
             p
@@ -61,7 +66,7 @@
          line-height: 120px
          text-align: left
          color: $blue
-         position: relative       
+      
       p
          font-weight: normal
          font-size: 16px
@@ -169,7 +174,36 @@
          display: inline
 
 @media (max-width: 767px)
-   .facts      
+   .facts 
+      &__numbers
+         flex-direction: column
+         align-items: center
+         justify-content: center
+         text-align: center
+         &-item
+            width: 50%
+            &:nth-child(2)
+               padding-right: 5%
+            padding-right: 5%
+            &:first-child, &:nth-child(2), &:nth-child(3)
+               p
+                  width: 300px
+                  left: 0
+                  bottom: -30px
+               img
+                  left: 115px
+            &:first-child
+               img
+                  left: 75px
+                  top: 30px
+            &:nth-child(2)
+               img
+                  left: 50px
+                  top: -50px
+            span
+               font-size: 4em
+
+
       &__gallery
          flex-direction: column
          padding: 46px 0 0
@@ -186,7 +220,7 @@
                margin-right: 0
 
 @media (max-width: 575px)
-   .facts
+   .facts      
       &__medals
          margin: 20px 0 50px
          display: flex
@@ -204,3 +238,21 @@
             margin: 0 2px
             padding: 0 auto
             font-size: 1.4em
+      &__gallery
+         font-size: 0.85em
+      
+   .gallery_2
+      li
+         &:last-child
+            margin-bottom: 0
+
+@media (max-width: 350px)
+
+
+   .facts
+      padding: 0 20px
+      &__numbers
+         &-item
+            &:nth-child(2)
+               padding-right: 95%
+            padding-right: 95%
