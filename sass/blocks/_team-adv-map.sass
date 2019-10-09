@@ -1,8 +1,7 @@
 .team
    font-weight: bold
    color: $blue
-
-   padding-bottom: 58px
+   margin-bottom: 58px
    display: flex
    justify-content: center
 
@@ -13,10 +12,9 @@
    div
       position: relative
       margin: 0 auto          
-      text-align: center  
+      text-align: center
       width: 280px
       height: 280px
-      background-color: red
       margin: 0 1%   
       img
          &:nth-child(1)
@@ -26,24 +24,29 @@
             
          &:nth-child(2)
             position: absolute
-            left: 0
-            top: 60%
-            min-width: 50px
-            min-height: 50px
-                
+            left: 2.5%
+            top: 65%
+            min-width: 76px       
       h3
-         padding-top: 50px
          font-size: 20px
          color: $black
+      span
+         width: 100%
+         position: absolute
+         top: 105%
+         left: 0
+
 
 @media (max-width: 767px)
    .team
-      div                  
+      div
+         height: 170px                  
          img
             &:nth-child(2)
-               width: 50px
+               min-width: 50px
+               max-width: 50px
                left: 0
-               bottom: 45%   
+               top: 70%
 
 .adv
    a      
@@ -121,13 +124,17 @@
 
    .team
       div
+         height: 280px
          &:nth-child(2), &:nth-child(3)
             display: none                  
          img
-            &:nth-child(2)
-               width: 50px
-               left: 25%
-               bottom: 27.5%   
+            &:nth-child(2)               
+               left: 5%
+               top: 75%
+               min-width: 76px
+               max-width: 76px
+ 
+  
    .adv
       padding-bottom: 26px
       a
