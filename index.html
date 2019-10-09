@@ -65,9 +65,10 @@
 <!-- PROMO -->
 <section class="promo">
 
-    <div class="container">
+    <div class="wrap">
+
         <div class="promo__wrap">
-            
+    
             <div class="promo__left">
                 <div class="promo__protect">
                         Защитите<br>
@@ -78,7 +79,7 @@
                     <img src="img/svg/panorama_fish_eye_24px.svg" alt="">
                     <a href="#!" class="promo__link">Аксессуары для детской безопасности</a>
                 </div>
-
+    
                 <div class="arrows promo__arrows">
                     <div class="arrows__square">
                         <a href="#!" class="arrows__left"></a>
@@ -89,7 +90,7 @@
                 </div>
             </div>
     
-            <div class="promo__card">
+            <form class="promo__card" action="#">
                 <p class="promo__card-free">
                     Бесплатный
                     <br>вызов замерщика</p>
@@ -97,18 +98,20 @@
                     Наши специалисты свяжутся с вами
                     <br>в ближайшее время</p>
         
-                <form id="" class="" action="#">
-                    <input type="name" required placeholder="Как Вас Зовут?" type="text">
-                    <input type="phone" required placeholder="+7(ХХХ) ХХХ - ХХ - ХХ">
-                    <input type="address" required placeholder="Адрес">
-        
-                    <button class="button button_submit">Вызвать</button>
-                </form>
-                <div class="promo__card-policy">Нажимая кнопку, вы соглашаетесь с условиями <a class="promo__card-policy-link">Политики конфиденциальности</a></div>
-            </div>
 
+                <input type="name" required placeholder="Ваше имя" type="text">
+                <input type="phone" required placeholder="Ваш телефон" class="promo__card-input">
+                <input type="address" required placeholder="Адрес">
+    
+                <button class="button button_submit">Вызвать</button>
+                
+                <div class="promo__card-policy">Нажимая кнопку, вы соглашаетесь с условиями <a class="promo__card-policy-link">Политики конфиденциальности</a></div>
+            </form>
+    
         </div>
     </div>
+
+   
 </section>
 
 
