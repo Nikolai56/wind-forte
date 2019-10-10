@@ -1,50 +1,49 @@
-.header   
-   background: url(../img/spb-line.png) center top no-repeat
-   background-position-y: 25%
-   &__wrap
-      padding-top: 34px
-      padding-bottom: 37px
-      display: flex
-      align-items: center
-      justify-content: flex-end   
-      position: relative
-      height: 151px
-   &__elem
-      display: flex
-      align-items: center
-      min-height: 100%
-      padding-right: 2%
-      img
-         padding-right: 5px
-      &:first-child
-         position: absolute
-         left: 0
-      &:last-child
-         padding-right: 0
-   &__logo
-      background: url(../img/logo.png) left center no-repeat
-      min-width: 175px
-      min-height: 79px
-   &__link
+.hamburger
+	display: none
+
+.header
+   position: relative
+   height: 150px
+   width: 100%
+   background: url(../img/spb-line.png) center bottom/cover no-repeat
+   display: flex
+   justify-content: space-around
+   align-items: center
+   a
+      color: black
+      font-size: 17px
       font-weight: bold
-      font-size: 18px
-      line-height: 20px
-      text-decoration: none
-      color: $black
-      &:hover
-         color: $blue
-   &__phone-wrap
-         a
-            font-size: 20px
-            padding-bottom: 5px
-         span
-            font-size: 14px    
+      padding: 5px 0 5px 30px
+      &:nth-child(1)
+         background: url(../img/logo.png) left center no-repeat
+         width: 175px
+         height: 79px
+      &:nth-child(2)
+         background: url(../img/svg/header-phone.svg) no-repeat left center
+         background-size: 30px
+         font-size: 20px
+         p
+            font-size: 14px
+      &:nth-child(3)
+         background: url(../img/calculator.png) no-repeat left center
+      &:nth-child(4)
+         background: url(../img/account.png) no-repeat
+
 nav
    background-color: $blue
    width: 100%
-
-.phone_thumb
-   height: 26px
+   height: 50px
+   margin: 0 auto
+   padding: 0 0 0 10%
+   a
+      width: 13%
+      padding: 1.7% 1%
+      text-align: center
+      color: $white
+      font-size: 16px
+      &:hover
+         background-color: $yellow
+         text-decoration: none
 
 .menu
    display: flex
@@ -60,47 +59,18 @@ nav
          background-color: $yellow
          color: $black
          font-weight: bold
-   &__link
-      font-size: 17px
-      line-height: 20px
-      font-weight: normal
-      text-decoration: none
-      color: inherit
-      height: 100%
-      width: 100%
-      display: flex
-      justify-content: center
-      align-items: center
-      padding: 0 1%
 
-.hamburger
-	display: none
-
-
-@media (max-width: 991px)
-
+@media (max-width: 767px)
    .header
-      &__logo
-         background: url(../img/logo.png) left center no-repeat
-         min-width: 175px
-         min-height: 79px
-      .phone_thumb
-         height: auto
-         padding-right: 5px
-         padding-bottom: 5px
-      &__elem
-         padding-left: 55px
-         padding-right: 0
-         &:last-child, &:nth-child(3),
+      a
+         &:nth-child(3), &:nth-child(4)
             display: none
-      &__wrap
-         min-width: 100%
-         justify-content: flex-end
-
-   .menu
-      &__link
-         font-size: .9em
-
+         &:nth-child(2)
+            background-size: 50px
+            padding-left: 55px
+         &:nth-child(1)
+            width: 210px
+            background-position-x: 100%
 
 @media (max-width: 767px)
    
@@ -128,7 +98,7 @@ nav
 	.hamburger
 		display: block
 		position: absolute
-		left: 0px
+		left: 20px
 		top: 50%
 		transform: translateY(-50%)
 		width: 26px
@@ -151,21 +121,19 @@ nav
 					transform: translateY(3px) rotate(45deg)
 
 @media (max-width: 575px)
-
    .header
-      background: none
-      .phone_thumb
-         height: 26px
-      &__wrap
-         max-height: 50px
-         padding: 0
-      &__logo
-         background: url(../img/logo-xs.png) left center no-repeat
-      &__elem
-         padding-left: 55px
-         padding-right: 0
-         &:last-child, &:nth-child(3), .header__phone-wrap
-            display: none
+      height: 50px
+      a
+         &:nth-child(1)
+            height: 50px
+            background: url(../img/logo-xs.png) left center no-repeat
+            background-position-x: 40%
+         &:nth-child(2)            
+            p, span
+               display: none
+            height: 50px
+            background-size: 30px
+            background-position-x: 100%
 
 @media (max-width: 575px)
    
@@ -173,7 +141,7 @@ nav
 		display: block
 		position: absolute
 		left: 10%
-		top: 60%
+		top: 65%
 		transform: translateY(-50%)
 		width: 26px
 		height: 30px
