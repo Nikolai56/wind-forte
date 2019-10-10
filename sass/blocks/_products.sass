@@ -23,22 +23,17 @@
          padding-bottom: 16px
       &:hover
          border: 2px solid $yellow
-         cursor: pointer
-         
+         cursor: pointer         
 
-   // 991
 @media (max-width: 991px)
 
    .products
-      img
-         width: 75%
       &__elem
          font-size: 1em
          margin: 0         
       .row
          div
             padding: 5px
-
 
 @media (max-width: 767px)
    
@@ -60,7 +55,18 @@
             width: 60px            
             height: 64px
 
+@media (max-width: 384px)
    
+   .products
+      padding: 0 10px
+      &__elem      
+         font-size: 16px
+         margin: 0
+         img
+            max-height: 33px
+            max-width: 32px
+
+
 
 
       

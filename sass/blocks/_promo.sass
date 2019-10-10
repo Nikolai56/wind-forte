@@ -1,5 +1,5 @@
 .promo
-
+   
    background: url("../img/banner.jpg") center (center/cover) no-repeat
    background-color: #efefef
    &__wrap
@@ -13,7 +13,7 @@
    &__protect
       display: block
       padding-top: 120px
-      padding-left: 23px
+      padding-left: 10%
       padding-right: 10px
       color: $blue
       font-weight: bold
@@ -24,10 +24,10 @@
       display: block
       font-size: 20px
       margin-top: 23px
-      padding-left: 46px
+      padding-left: calc(10% + 25px)
       text-align: left
       background: url(../img/promo__left-misc_arr.png) left top no-repeat
-      background-position-x: 22px
+      background-position-x: 10%
    &__link
       font-weight: bold
       font-size: 17px
@@ -41,11 +41,20 @@
       margin-bottom: 36px
       max-width: 380px
       height: 477px
-      padding: 30px 50px
-      border-radius: 15px
+      border-radius: 20px
       color: $white
       background-color: $blue
       text-align: center
+      padding: 5% 5%
+      button
+         width: 100%
+         margin: 0 auto
+      input
+         max-width: 100%
+         min-width: 100px
+      width: 45%
+      span
+         display: none
       &-free
          font-size: 1.6em
          line-height: 1.2em
@@ -65,23 +74,10 @@
          &:hover
             text-decoration: none
             cursor: pointer
-            
-
-@media (max-width: 991px)
-
-   .promo
-      &__card  
-         padding: 4% 4%
-         button
-            width: 100%
-         input
-            max-width: 100%
-            min-width: 100px
-         width: 45%
-
-
+   .button_calc
+      display: none
+       
 @media (max-width: 575px)
-
 
    .promo
       height: auto
@@ -97,6 +93,17 @@
          height: auto
          border-radius: 0
          margin: 0
+         padding: 5% calc(10% + 5px)
+         span
+            display: inline
+         .button_submit
+            margin-bottom: 3%
+         .button_calc
+            display: block
+            background: $white
+            img
+               padding-right: 5px
+               padding-bottom: 2px
       &__left
          min-height: 204px
       

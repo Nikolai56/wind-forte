@@ -1,23 +1,30 @@
 .header   
-   background: url(../img/spb-line.png) center bottom no-repeat
-   padding-top: 34px
-   padding-bottom: 37px
-   display: flex
-   align-items: center
-   justify-content: flex-end   
-   position: relative
-   height: 151px
+   background: url(../img/spb-line.png) center top no-repeat
+   background-position-y: 25%
+   &__wrap
+      padding-top: 34px
+      padding-bottom: 37px
+      display: flex
+      align-items: center
+      justify-content: flex-end   
+      position: relative
+      height: 151px
    &__elem
       display: flex
       align-items: center
-      padding-right: 5%      
+      min-height: 100%
+      padding-right: 2%
       img
-         padding-right: 14px
+         padding-right: 5px
       &:first-child
          position: absolute
          left: 0
       &:last-child
          padding-right: 0
+   &__logo
+      background: url(../img/logo.png) left center no-repeat
+      min-width: 175px
+      min-height: 79px
    &__link
       font-weight: bold
       font-size: 18px
@@ -36,9 +43,8 @@ nav
    background-color: $blue
    width: 100%
 
-.phone_thumb, .header__elem
-   min-width: 24px
-   min-height: 26px
+.phone_thumb
+   height: 26px
 
 .menu
    display: flex
@@ -65,11 +71,37 @@ nav
       display: flex
       justify-content: center
       align-items: center
+      padding: 0 1%
 
 .hamburger
 	display: none
 
-// 767//
+
+@media (max-width: 991px)
+
+   .header
+      &__logo
+         background: url(../img/logo.png) left center no-repeat
+         min-width: 175px
+         min-height: 79px
+      .phone_thumb
+         height: auto
+         padding-right: 5px
+         padding-bottom: 5px
+      &__elem
+         padding-left: 55px
+         padding-right: 0
+         &:last-child, &:nth-child(3),
+            display: none
+      &__wrap
+         min-width: 100%
+         justify-content: flex-end
+
+   .menu
+      &__link
+         font-size: .9em
+
+
 @media (max-width: 767px)
    
 	.menu
@@ -97,13 +129,57 @@ nav
 		display: block
 		position: absolute
 		left: 0px
+		top: 50%
+		transform: translateY(-50%)
+		width: 26px
+		height: 30px
+		span
+			display: block
+			height: 5px
+			width: 150%
+			background-color: $blue
+			margin-bottom: 12px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+
+@media (max-width: 575px)
+
+   .header
+      background: none
+      .phone_thumb
+         height: 26px
+      &__wrap
+         max-height: 50px
+         padding: 0
+      &__logo
+         background: url(../img/logo-xs.png) left center no-repeat
+      &__elem
+         padding-left: 55px
+         padding-right: 0
+         &:last-child, &:nth-child(3), .header__phone-wrap
+            display: none
+
+@media (max-width: 575px)
+   
+	.hamburger
+		display: block
+		position: absolute
+		left: 10%
 		top: 60%
 		transform: translateY(-50%)
 		width: 26px
 		height: 30px
 		span
 			display: block
-			height: 4px
+			height: 3px
 			width: 100%
 			background-color: $blue
 			margin-bottom: 4px
