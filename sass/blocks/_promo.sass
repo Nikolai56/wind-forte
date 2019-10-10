@@ -2,9 +2,9 @@
    
    background: url("../img/banner.jpg") center (center/cover) no-repeat
    background-color: #efefef
-   &__wrap
-      display: flex
-      justify-content: space-between
+   
+   display: flex
+   justify-content: space-between
    &__left
       width: 100%
       position: relative
@@ -12,9 +12,7 @@
       display: block
    &__protect
       display: block
-      padding-top: 120px
-      padding-left: 10%
-      padding-right: 10px
+      padding: 120px 0 0 10%
       color: $blue
       font-weight: bold
       font-size: 48px
@@ -22,58 +20,59 @@
       text-transform: uppercase
    &__misc
       display: block
-      font-size: 20px
       margin-top: 23px
       padding-left: calc(10% + 25px)
       text-align: left
       background: url(../img/promo__left-misc_arr.png) left top no-repeat
       background-position-x: 10%
-   &__link
       font-weight: bold
       font-size: 17px
       line-height: 20px
       text-decoration: none
       color: $black
       &:hover
-         color: #093999
+         color: $blue
+
    &__card
-      margin-top: 36px
-      margin-bottom: 36px
+      margin: 36px
       max-width: 380px
       height: 477px
-      border-radius: 20px
+      border-radius: 15px
       color: $white
       background-color: $blue
+      padding: 4% 4%
+      font-size: 14px
+      line-height: 17px
       text-align: center
-      padding: 5% 5%
       button
          width: 100%
          margin: 0 auto
+         margin: 10px 0
       input
          max-width: 100%
-         min-width: 100px
+         margin-top: 10px
+         height: 50px
+         color: $blue
+         background-color: $white
+         font-size: 16px
+         border: none
+         font-weight: normal
       width: 45%
       span
          display: none
       &-free
          font-size: 1.6em
          line-height: 1.2em
-         text-transform: uppercase    
-      &-spec
-         padding: 5px 0 16px 0
-         font-size: 14px
-         line-height: 17px
-      &-policy
-         margin-top: 18px
-         text-align: left
-         font-size: 12px
-         line-height: 17px
-      &-policy-link
+         text-transform: uppercase
+         text-align: center
+         padding-bottom: 10px
+      a
          color: $yellow
          text-decoration: underline
          &:hover
             text-decoration: none
             cursor: pointer
+
    .button_calc
       display: none
        
@@ -81,11 +80,11 @@
 
    .promo
       height: auto
-      background: #EFEFEF url("../img/banner.jpg") center (center/cover) no-repeat
+      background: #EFEFEF url("../img/banner.jpg") center (top) no-repeat
       background-position-x: -60px
-      &__wrap
-         flex-direction: column
-         justify-content: flex-end
+      background-size: 170%
+      flex-direction: column
+      justify-content: flex-end
       &__card
          p, input, &-policy
             display: none
@@ -93,7 +92,7 @@
          height: auto
          border-radius: 0
          margin: 0
-         padding: 5% calc(10% + 5px)
+         padding: 2% calc(10% + 5px)
          span
             display: inline
          .button_submit
@@ -113,10 +112,12 @@
          padding-top: 36px
          padding-bottom: 0
       &__misc
-         font-size: 0.3em
-         line-height: .5em
+         font-size: .9em
+         line-height: 1em
          padding-top: 0
-      .arrows
+         min-height: 50px
+
+   .arrows
+      &__left, &__right
          display: none
-      .wrap
-         padding: 0
+
