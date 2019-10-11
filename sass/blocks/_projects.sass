@@ -1,67 +1,53 @@
 .projects
    display: flex
+
    &__menu
-      width: 20%
-      padding-bottom: 10px
+      min-width: 230px      
+      width: 40%
       a
          display: block
          height: 50px
-         padding: 20px 0
+         padding: 7.5% 0
          padding-left: 50px
+
+
    &__r-wrap
-      display: flex
+      position: relative
+      display: flex  
       flex-wrap: wrap
+      max-width: 100%
+
    &__slider
-      width: 60%
+      position: relative   
+      background: url(../img/Aluminium-awning-windows.jpg) top (left/cover) no-repeat
       height: 365px
-      position: relative         
-      background: url(../img/Aluminium-awning-windows.jpg) center (left/cover) no-repeat   
+      width: 60%
+
    &__works
       width: 40%
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, .85)), url(../img/replacement-windows.jpg) center (center/cover) no-repeat 
       height: 365px
-      h3
-         padding-top: 32px
-         padding-left: 50px
-      li         
-         font-size: 16px
-         line-height: 23px
-         padding: 0 0 19px 87px
-         text-align: left
-         position: relative
-         &:before
-            content: ''
-            display: block
-            height: 2px
-            width: 26px
-            color: $yellow
-            background-color: $yellow
-            position: absolute
-            left: 50px
-            top: 10px
-            transform: rotate(180deg)
-         &:first-child
-            &:before
-               opacity: 0      
+      position: absolute
+      right: 0
+      top: 0
+      padding-top: 22px      
       div
-         color: white
-         font-size: 25px
+         text-transform: uppercase
+         font-size: 16px
+         color: $yellow
          background-color: $blue
-         padding: 14px 55px 15px 87px
-         display: flex
-         justify-content: space-between 
+         padding: 14px 55px 15px calc(30px + 5%)
          span
-            text-transform: uppercase
-            font-size: 16px
-            color: $yellow
-            position: absolute
-            left: 50px
+            color: white
+            font-size: 25px
+
          &::before
             width: 0px
 
    &__comments
+      background: white
       padding-top: 25px
       display: flex
+      width: 100%
       img
          width: 121px
          height: 121px
@@ -99,41 +85,7 @@
 
 // img/svg/chevron_right_24px.svg
 
-@media (max-width: 991px)
-
-   .projects
-      &__wrap
-         flex-direction: column        
-         max-width: 550px
-         margin: 0 auto
-      &__thumb
-         display: none
-      &__left-wrap
-         display: flex
-         flex-wrap: wrap
-         justify-content: center
-      &__elem
-         font-size: 1.1em
-         padding-right: 5%
-         // &:first-child
-         //    padding-left: 0%
-         color: $blue
-         &.active
-            border: none
-            color: $black
-            text-decoration: none
-      &__arr-right-sm
-         display: none
-      &__works
-         min-width: 100%
-         height: auto
-      &__list-item
-         font-size: 1.2em
-         margin-bottom: 1em
-         max-width: 550px
-      &__slider
-            max-width: 550px
-            width: auto
+// @media (max-width: 991px)  
 
 @media (max-width: 767px)
 
@@ -218,3 +170,30 @@
                width: 100%
                bottom: -2px
                position: absolute
+
+   &__works      
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, .85)), url(../img/replacement-windows.jpg) center (center/cover) no-repeat 
+      h3
+         padding-left: calc(5% + 30px)
+      li         
+         font-size: 16px
+         line-height: 23px
+         padding: 0 0 19px calc(30px + 5%)
+         text-align: left
+         position: relative
+         &:first-child
+            &:before
+               display: none
+         &:before
+            content: ''
+            display: block
+            height: 2px
+            width: 26px
+            color: $yellow
+            background-color: $yellow
+            position: absolute
+            left: 5%
+            top: 10px
+            transform: rotate(180deg)
+         &:last-child
+            height: 25%
