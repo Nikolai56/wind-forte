@@ -3,19 +3,19 @@
 
    &__menu
       min-width: 230px      
-      width: 40%
+      width: 30%
       a
          display: block
          height: 50px
          padding: 7.5% 0
          padding-left: 50px
 
-
    &__r-wrap
       position: relative
       display: flex  
       flex-wrap: wrap
-      max-width: 100%
+      width: 70%
+ 
 
    &__slider
       position: relative   
@@ -26,6 +26,7 @@
    &__works
       width: 40%
       height: 365px
+      max-height: 365px
       position: absolute
       right: 0
       top: 0
@@ -35,7 +36,7 @@
          font-size: 16px
          color: $yellow
          background-color: $blue
-         padding: 14px 55px 15px calc(30px + 5%)
+         padding: 14px 0 15px calc(30px + 5%)
          span
             color: white
             font-size: 25px
@@ -85,7 +86,20 @@
 
 // img/svg/chevron_right_24px.svg
 
-// @media (max-width: 991px)  
+@media (max-width: 991px)
+   .projects
+      &__slider
+
+         width: 50%
+
+      &__works
+         width: 50%
+      h3
+         padding-left: calc(5% + 30px)
+      li         
+         padding: 0 0 19px calc(30px + 5%)
+      div
+
 
 @media (max-width: 767px)
 
@@ -192,7 +206,7 @@
             color: $yellow
             background-color: $yellow
             position: absolute
-            left: 5%
+            left: 3%
             top: 10px
             transform: rotate(180deg)
          &:last-child
