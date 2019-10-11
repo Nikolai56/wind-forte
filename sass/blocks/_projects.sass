@@ -1,36 +1,34 @@
 .projects
    display: flex
+   padding: 0 2%
+   max-width: 1140px
+   margin: 0 auto
 
    &__menu
-      min-width: 230px      
-      width: 30%
+      display: flex
+      flex-direction: column
+      height: 365px
+      min-width: 200px      
+      width: 25%
       a
          display: block
          height: 50px
          padding: 7.5% 0
          padding-left: 50px
 
-   &__r-wrap
-      position: relative
-      display: flex  
-      flex-wrap: wrap
-      width: 70%
- 
+
 
    &__slider
       position: relative   
-      background: url(../img/Aluminium-awning-windows.jpg) top (left/cover) no-repeat
-      height: 365px
-      width: 60%
+      background: url(../img/Aluminium-awning-windows.jpg) top (left) no-repeat
+      width: 50%
 
    &__works
-      width: 40%
-      height: 365px
-      max-height: 365px
-      position: absolute
-      right: 0
-      top: 0
-      padding-top: 22px      
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 25%
+      height: 365px 
       div
          text-transform: uppercase
          font-size: 16px
@@ -40,7 +38,6 @@
          span
             color: white
             font-size: 25px
-
          &::before
             width: 0px
 
@@ -64,7 +61,7 @@
       position: relative 
       font-size: 14px
       line-height: 20px
-      max-height: 121px
+      
       padding: 1.5% 1% 1% 5%
       border: 1px solid #c1c1c1
       border-radius: 10px
@@ -84,58 +81,6 @@
          padding: 0 0 2% 0
          color: $blue
 
-// img/svg/chevron_right_24px.svg
-
-@media (max-width: 991px)
-   .projects
-      &__slider
-
-         width: 50%
-
-      &__works
-         width: 50%
-      h3
-         padding-left: calc(5% + 30px)
-      li         
-         padding: 0 0 19px calc(30px + 5%)
-      div
-
-
-@media (max-width: 767px)
-
-   .projects
-      &__comments
-         display: none
-
-@media (max-width: 575px)
-
-   .projects
-      padding: 0 20px
-      &__left-wrap
-         justify-content: flex-start
-      &__elem
-         display: inline
-         font-size: 12px
-         line-height: 17px
-         padding-right: 7px
-         padding-bottom: 7px
-         text-align: left
-         height: auto
-      &__slider       
-         background: url(../img/Aluminium-awning-windows.jpg) center (center) no-repeat
-     
-      &__wrap
-         background: none      
- 
-
-      &__list-item
-         &:first-child
-            padding: 0
-         &:last-child
-            border-radius: 10px
-
-
-
 
 .projects
    &__menu
@@ -150,12 +95,14 @@
             background: url(../img/Rolety.png) left (center/contain) no-repeat
          &:nth-child(5)
             background: url(../img/Steklopaket.png) left (center/contain) no-repeat
+            display: none
          &:nth-child(6)
             background: url(../img/Osteklenie_lodziy.png) left (center/contain) no-repeat
          &:nth-child(7)
             background: url(../img/Lodziy-1.png) left (center/contain) no-repeat
          &:nth-child(8)
             background: url(../img/potolok_1-1.png) left (center/contain) no-repeat
+         background-size: 50px
          font-size: 17px
          line-height: 20px
          font-weight: bold
@@ -189,10 +136,12 @@
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, .85)), url(../img/replacement-windows.jpg) center (center/cover) no-repeat 
       h3
          padding-left: calc(5% + 30px)
+         padding-bottom: 0
+         padding-right: 10px
       li         
          font-size: 16px
          line-height: 23px
-         padding: 0 0 19px calc(30px + 5%)
+         padding: 0 10px 1% calc(30px + 5%)
          text-align: left
          position: relative
          &:first-child
@@ -211,3 +160,116 @@
             transform: rotate(180deg)
          &:last-child
             height: 25%
+
+
+
+@media (max-width: 991px)
+   .projects
+      &__menu
+         a
+            font-size: 14px
+            margin-bottom: 0
+      &__works
+         li
+            font-size: 14px
+            font-weight: bold
+            h3
+               font-size: 16px
+               font-weight: bold
+         div
+            font-size: 13px
+            span
+               font-size: 20px
+
+
+@media (max-width: 767px)
+
+   .projects
+      &__menu
+         max-width: 50px
+         min-width: 50px
+         a
+            width: 50px
+            span
+               display: none
+      &__slider
+         width: 60%
+      &__works
+         width: 40%
+
+
+// @media (max-width: 767px)
+
+//    .projects
+//       flex-wrap: wrap
+//       padding: 0 20px
+//       &__menu
+//          min-width: 100%
+//          flex-direction: row
+//          justify-content: space-between
+//          flex-wrap: wrap
+//          height: auto
+//          a
+//             color: $blue
+//             font-size: 19px
+//             line-height: 30px
+//             height: auto
+//             padding: 0
+//             margin: 19px
+//             &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8)
+//                background: none
+//             &:nth-child(5)
+//                display: block
+//       &__slider
+//          width: 60%
+//       &__works
+//          width: 40%
+
+// @media (max-width: 693px)
+
+//    .projects     
+//       &__menu
+//          a
+//             font-size: 16px 
+//             margin-right: 15px
+        
+
+
+
+// @media (max-width: 575px)
+
+//    .projects
+//       &__comments
+//          display: none
+
+
+//       &__slider       
+//          background: url(../img/Aluminium-awning-windows.jpg) center (center) no-repeat
+     
+//       &__wrap
+//          background: none      
+ 
+
+//       &__list-item
+//          &:first-child
+//             padding: 0
+//          &:last-child
+//             border-radius: 10px
+
+
+
+// img/svg/chevron_right_24px.svg
+
+
+//    .projects
+//       &__slider
+
+//          width: 50%
+
+//       &__works
+//          width: 50%
+//       h3
+//          padding-left: calc(5% + 30px)
+//       li         
+//          padding: 0 0 19px calc(30px + 5%)
+//       div
