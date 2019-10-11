@@ -34,16 +34,18 @@
          color: $blue
 
    &__card
-      margin: 36px
-      max-width: 380px
+      margin: 36px 36px 36px 0
+      width: 80%
+      max-width: 300px
       height: 477px
-      border-radius: 15px
+      border-radius: 20px
       color: $white
       background-color: $blue
-      padding: 4% 4%
-      font-size: 14px
+      padding: 5% 3%
+      font-size: 13px
       line-height: 17px
       text-align: center
+
       button
          width: 100%
          margin: 0 auto
@@ -57,15 +59,16 @@
          font-size: 16px
          border: none
          font-weight: normal
-      width: 45%
-      span
-         display: none
+
+      h3
+         padding-bottom: 10px
+
       &-free
          font-size: 1.6em
          line-height: 1.2em
          text-transform: uppercase
          text-align: center
-         padding-bottom: 10px
+         padding-bottom: 20px
       a
          color: $yellow
          text-decoration: underline
@@ -93,10 +96,10 @@
          border-radius: 0
          margin: 0
          padding: 2% calc(10% + 5px)
-         span
-            display: inline
-         .button_submit
-            margin-bottom: 3%
+         button
+            width: 100%
+            margin: 0 auto
+            margin: 5px 0
          .button_calc
             display: block
             background: $white
@@ -116,8 +119,7 @@
          line-height: 1em
          padding-top: 0
          min-height: 50px
-
-   .arrows
-      &__left, &__right
+   .promo
+      .arrows__left, .arrows__right, span, h3
          display: none
 
