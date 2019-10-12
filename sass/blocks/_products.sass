@@ -1,8 +1,4 @@
-.products
-   &__wrap
-      display: flex
-      flex-direction: row
-      justify-content: space-between
+.products 
    &__elem
       display: flex
       flex-direction: column
@@ -38,16 +34,11 @@
 @media (max-width: 767px)
    
    .products
-      &__wrap
-         flex-direction: column
-         justify-content: center
-         align-items: center
       &__elem
          display: block
          height: auto
          min-width: 100%
          padding: 5px
-         margin: 3px
          font-size: 1.45em
          img
             padding: 0 10px 0 0
@@ -55,16 +46,20 @@
             width: 60px            
             height: 64px
 
-@media (max-width: 384px)
+@media (max-width: 575px)
    
    .products
-      padding: 0 10px
-      &__elem      
-         font-size: 16px
-         margin: 0
+      .row
+         div
+            padding: 1px
+      &__elem
+         min-width: 80%
+         max-width: 80%
+         font-size: 18px
+         margin: 0 auto
          img
-            max-height: 33px
-            max-width: 32px
+            max-height: 40px
+            max-width: 40px
 
 
 
