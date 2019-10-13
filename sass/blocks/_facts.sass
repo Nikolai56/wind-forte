@@ -5,7 +5,8 @@
       display: none
    line-height: 23px
    text-align: center   
-   margin: 0 auto 70px
+   margin: 0 auto
+   
    &__paragraph
       max-width: 75%
       text-align: center
@@ -13,20 +14,26 @@
    &__counter
       background-color: $blue
       border-radius: 10px
-      width: 440px
-      height: 211px
       color: white
       font-size: 20px
       line-height: 24px
-      margin: 42px auto 26px     
+      margin: 42px auto 26px    
       p
-         padding-top: 25px
-
+         padding: 25px
+      input
+         width: 12%
+         font-size: 40px
+         font-weight: bold
+         border: 2px solid $yellow
+         border-radius: 5px
+         margin-right: 5px
+         &:last-child
+            margin-right: 0
    &__counter-ul
-      padding-top: 23px
       display: flex
       flex-direction: row
       justify-content: center
+      margin: 0
 
    &__numbers
       padding-bottom: 67px
@@ -231,13 +238,7 @@
       &__partners
          img
             width: 46%
-      &__counter
-         width: auto
-         input
-            width: 35px
-            margin: 0 2px
-            padding: 0 auto
-            font-size: 1.4em
+
       &__gallery
          font-size: 0.85em
       
@@ -248,7 +249,6 @@
 
 @media (max-width: 350px)
 
-
    .facts
       padding: 0 20px
       &__numbers
@@ -256,3 +256,11 @@
             &:nth-child(2)
                padding-right: 95%
             padding-right: 95%
+
+      // &__counter
+      //    width: auto
+      //    input
+      //       width: 35px
+      //       margin: 0 2px
+      //       padding: 0 auto
+      //       font-size: 1.4em
