@@ -1,20 +1,34 @@
 .wind_repairs
+   margin-top: 30px
    background: $blue url(../img/repair2.png) right (center/contain) no-repeat
    background-position-x: 90%
    height: 300px   
-   margin-top: 74px
-   margin-bottom: 65px
+
+
    h2
       text-align: left 
       color: $white
+      margin: 0
    button
-      margin-bottom: 87px
       width: 25%
       min-width: 150px
 
    .container
-      background: url(../img/svg/key.svg) center bottom no-repeat
+      background: url(../img/svg/key.svg) center center no-repeat
       background-position-x: 25%
       background-position-y: 40px
       height: 100%
-      padding-top: 40px
+
+
+@media (max-width: 575px)
+
+   .wind_repairs
+
+      height: auto
+      padding-bottom: 25px
+         background: $blue url(../img/repair2.png) right (center/cover) no-repeat
+
+@media (max-width: 430px)
+   .wind_repairs
+      background-image: none
+

@@ -1,4 +1,6 @@
 .facts
+   h2
+      padding-top: 0
    h3
       max-width: 90%
    br
@@ -12,6 +14,7 @@
       text-align: center
       margin: 0 auto
    &__counter
+      max-width: 60%
       background-color: $blue
       border-radius: 10px
       color: white
@@ -22,6 +25,7 @@
          padding: 25px
       input
          width: 12%
+         height: 70px
          font-size: 40px
          font-weight: bold
          border: 2px solid $yellow
@@ -179,14 +183,26 @@
          width: auto
       br
          display: inline
+      &__counter
+         input
+            height: 60px
+
 
 @media (max-width: 767px)
-   .facts 
+   .facts
+      &__paragraph
+         max-width: 100%
+         padding-top: 0
+      &__counter
+         max-width: 100%
       &__numbers
          flex-direction: column
          align-items: center
          justify-content: center
          text-align: center
+      &__counter
+         input
+            height: 70px
          &-item
             width: 50%
             &:nth-child(2)
@@ -227,7 +243,11 @@
                margin-right: 0
 
 @media (max-width: 575px)
-   .facts      
+   .facts
+      &__counter
+         input
+            height: 60px
+
       &__medals
          margin: 20px 0 50px
          display: flex
