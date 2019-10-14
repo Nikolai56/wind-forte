@@ -87,6 +87,7 @@
       &:nth-child(1)         
          background: url(../img/opt_check.png) no-repeat center top
          background-position-y: 20px
+         background-size: 50%
       &:nth-child(2)
          background: url(../img/opt_comfort.png) no-repeat center top
          background-position-y: 20px
@@ -152,16 +153,16 @@
          min-width: 100%
          &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
             background-position-y: 30%
-            background-position-x: 2%   
+            background-position-x: 0  
             border-right: 0
             background-size: contain            
          padding-top: 4%
          padding-bottom: 4%
          text-align: left
-         padding-left: calc(2% + 80px)
+         padding-left: calc(1% + 75px)
          br
             display: none
-         font-size: 1.2em         
+         font-size: 1.1em         
       &:last-child
          padding-top: 0
          background: none
@@ -175,3 +176,11 @@
    .wind_compare, .wind_line
       br
          display: inline
+ 
+   .wind_compare
+      li
+         span
+            color: white
+            display: none
+   .fuckyou
+      display: none

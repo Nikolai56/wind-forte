@@ -8,6 +8,7 @@
    line-height: 23px
    text-align: center   
    margin: 0 auto
+   padding-bottom: 20px
    
    &__paragraph
       max-width: 75%
@@ -246,7 +247,12 @@
    .facts
       &__counter
          input
-            height: 60px
+            height: 50px     
+      &__numbers
+         width: 50%
+         &-item
+            margin-right: 25%
+            margin-left: 20%
 
       &__medals
          margin: 20px 0 50px
@@ -267,20 +273,39 @@
          &:last-child
             margin-bottom: 0
 
-@media (max-width: 350px)
+@media (max-width: 380px)
 
    .facts
-      padding: 0 20px
-      &__numbers
-         &-item
-            &:nth-child(2)
-               padding-right: 95%
-            padding-right: 95%
+      &__counter
+         input
+            height: 50px
+         margin-bottom: 0
+         padding-bottom: 0
 
-      // &__counter
-      //    width: auto
-      //    input
-      //       width: 35px
-      //       margin: 0 2px
-      //       padding: 0 auto
-      //       font-size: 1.4em
+      &__numbers
+         span
+            font-size: 40px
+         p
+            min-width: 250px
+            font-size: 14px
+         &-item
+            height: 130px
+            &:nth-child(1), &:nth-child(2), &:nth-child(3)
+               p
+                  left: 0
+                  bottom: 0
+               padding-right: 90%
+            &:nth-child(1)
+               img
+                  left: 50px
+                  top: 35px
+            &:nth-child(2)
+               img
+                  top: -33px
+            &:nth-child(3)
+               img
+                  top: -43px
+                  left: 75px
+            
+         margin-bottom: 0
+         padding-bottom: 0
