@@ -1,8 +1,13 @@
-.promo
 
-   background: url("../img/banner.jpg") center (center/cover) no-repeat
-   background-color: #efefef
-   
+.carousel__inner
+   div
+
+   img
+      min-height: 550px
+      min-width: 1440px
+.promo
+   position: relative
+   background-color: #efefef   
    display: flex
    justify-content: space-between
    &__left
@@ -10,6 +15,7 @@
       position: relative
       padding-left: 5px
       display: block
+
    &__protect
       display: block
       padding: 120px 0 0 10%
@@ -18,23 +24,32 @@
       font-size: 48px
       line-height: 63px
       text-transform: uppercase
+      position: absolute
+      top: 0
+      left: 0
+
    &__misc
       display: block
       margin-top: 23px
       padding-left: calc(10% + 25px)
       text-align: left
-      background: url(../img/promo__left-misc_arr.png) left top no-repeat
       background-position-x: 10%
       font-weight: bold
       font-size: 17px
       line-height: 20px
       text-decoration: none
       color: $black
+      position: absolute
+      top: 50%
+      left: 0
       &:hover
          color: $blue
 
    &__card
-      margin: 36px 36px 36px 0
+      position: absolute
+      right: 2%
+      top: 5%
+      
       width: 50%
       max-width: 300px
       height: 477px
