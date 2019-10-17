@@ -3,7 +3,7 @@
    background-color: #efefef   
    display: flex
    justify-content: space-between
-
+   height: 550px 
    &__protect
       display: block
       padding-left: 10%
@@ -13,12 +13,13 @@
       line-height: 63px
       text-transform: uppercase
       position: absolute
-      top: 20%
+      top: 25%
       left: 0
 
    &__misc
-      background: url(../img/promo__left-misc_arr.png) no-repeat 20%
-      padding-left: 10%
+      background: url(../img/promo__left-misc_arr.png) no-repeat left top
+      margin-left: 10%
+      padding-left: 25px
       text-align: left
       font-weight: bold
       font-size: 17px
@@ -34,7 +35,7 @@
    &__card
       position: absolute
       right: 2%
-      top: 5%      
+      bottom: 5%      
       width: 50%
       max-width: 300px
       height: 477px
@@ -60,7 +61,6 @@
          font-weight: normal
       h3
          padding-bottom: 10px
-
       &-free
          font-size: 1.5em
          line-height: 1.2em
@@ -80,10 +80,7 @@
 @media (max-width: 575px)
 
    .promo
-      height: auto
-      background: #EFEFEF url("../img/banner.jpg") center (top) no-repeat
-      background-position-x: -60px
-      background-size: 170%
+      height: calc(204px + 138.38px)
       flex-direction: column
       justify-content: flex-end
       &__card
@@ -94,6 +91,8 @@
          border-radius: 0
          margin: 0
          padding: 2% calc(10% + 5px)
+         bottom: 0
+         right: 0
          button
             width: 100%
             margin: 0 auto
@@ -108,9 +107,14 @@
             img
                padding-right: 5px
                padding-bottom: 2px
+      .arrows
+         &__left
+            left: 0
+            top: 146px
+         &__right
+            left: calc(100% - 50px)
+            top: 146px
 
-      &__left
-         min-height: 204px
       
       &__protect
          font-size: 1.5em
