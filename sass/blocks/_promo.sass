@@ -15,6 +15,7 @@
       position: absolute
       top: 25%
       left: 0
+      max-width: 50%
 
    &__misc
       background: url(../img/promo__left-misc_arr.png) no-repeat left top
@@ -76,6 +77,15 @@
 
    .button_calc
       display: none
+
+
+       
+@media (max-width: 767px)
+   .promo__protect
+      font-size: 38px
+      font-weight: bold
+      line-height: 40px
+
        
 @media (max-width: 575px)
 
@@ -110,22 +120,24 @@
       .arrows
          &__left
             left: 0
-            top: 146px
+            top: 76px
          &__right
             left: calc(100% - 50px)
-            top: 146px
+            top: 76px
 
       
       &__protect
-         font-size: 1.5em
+         font-size: 2em
          line-height: 1.2em
-         padding-top: 36px
-         padding-bottom: 0
+         top: 10%
+         left: 12%
+
       &__misc
          font-size: .9em
          line-height: 1em
-         padding-top: 0
-         min-height: 50px
+         top: 45%
+         left: 12%
+
    .promo
        span, h3
          display: none
