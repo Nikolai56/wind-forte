@@ -3136,7 +3136,7 @@ button_mini {
 
 @media (max-width: 575px) {
   .promo .carousel__inner img {
-    max-height: calc(204px + 138.38px);
+    max-height: calc(210px);
   }
 }
 
