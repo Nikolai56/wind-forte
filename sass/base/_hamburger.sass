@@ -30,7 +30,7 @@
 
 @media (max-width: 767px)   
 	.menu
-		position: absolute
+		position: fixed
 		flex-direction: column
 		justify-content: center
 		align-items: center
@@ -40,7 +40,9 @@
 		height: 100vh      
 		background-color: rgba(9,57,153, .9)
 		transition: 0.6s all
+		
 		&_active
+			
 			right: 0
 			padding: 0
 			z-index: 2
